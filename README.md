@@ -1,1 +1,3 @@
-# will
+- [Will](https://en.wikipedia.org/wiki/Mark_Manson)
+- [Mark](https://www.youtube.com/watch?v=Y2M2Dgmm958)
+- [Jordan](https://www.reddit.com/r/Nietzsche/comments/ujufx8/jordan_peterson_says_he_thinks_friedrich/)
