@@ -1,0 +1,750 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Issue Tracking &#8212; Music</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/book-stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-167881009-1"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-167881009-1');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'communication/os-comms/os-comms-issue-tracking';</script>
+    <script src="../../_static/script.js"></script>
+    <link rel="canonical" href="https://book.the-turing-way.org/communication/os-comms/os-comms-issue-tracking.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content"><a href='https://www.gutenberg.org/files/174/174-h/174-h.htm'>Aesthetics vs. Morality</a></div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://static.dw.com/image/62054308_1004.webp" class="logo__image only-light" alt="Music - Home"/>
+    <script>document.write(`<img src="https://static.dw.com/image/62054308_1004.webp" class="logo__image only-dark" alt="Music - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Will
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../foreword/foreword.html">Foreword</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/navigate.html">Navigating the Handbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/emergent-strategy.html">Emergence as The Turing Way Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/embracing-digital-commons.html">Embracing the Principles of Digital Commons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/community.html">Community and Community Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/governance.html">Governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/cite.html">How to Cite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/faqs.html">Frequently Asked Questions</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../reproducible-research/reproducible-research.html">Guide for Reproducible Research</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/overview.html">Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-definitions.html">Definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-benefit.html">Added Advantages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-barriers.html">Barriers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/open.html">Open Research</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-data.html">Open Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-source.html">Open Source Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-hardware.html">Open Source Hardware</a></li>
+
+
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-access.html">Open Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-notebooks.html">Open Notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-scholarship.html">Open Scholarship</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/vcs.html">Version Control</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-workflow.html">Version Control Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-workflow-branches.html">Version Control and Branches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-general.html">The Git Version Control Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-in-research.html">Git for Research Projects</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git.html">Git Using the Command Line</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-commit.html">Git Commit Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-compare.html">Retrieving and Comparing Versions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-branches.html">Git Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-merge.html">Merging Branches in Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-interactive.html">Interactive, Visual Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-github.html">Git Commands to Work on GitHub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-summary.html">Summary Table of Git Commands</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-data.html">Version Control for Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-personal-stories.html">Personal Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/licensing.html">Licensing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-compatibility.html">License Compatibililty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ethical-source.html">Ethics-informed Licensing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-data.html">Data Licenses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-hardware.html">Hardware Licenses</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ml.html">Machine Learning Model Licenses</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ml-case-studies.html">Case Studies: Choosing an ML License</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-checklist.html">Checklist</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/rdm.html">Research Data Management</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-data.html">Research Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-find.html">Finding Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-dmp.html">Data Management Plan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-fair.html">The FAIR Principles and Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-personal.html">Personal data management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-storage.html">Data Storage and Organisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-spreadsheets.html">Data Organisation in Spreadsheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-metadata.html">Documentation and Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-methods.html">Methods and Protocols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-elns.html">Electronic Lab Notebooks (ELNs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-data-curation.html">Data Curation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-visualisation.html">Data Visualisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-repository.html">Data Repositories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-sharing.html">Sharing and Archiving Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-article.html">Data Article</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-checklist.html">Checklist</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-stories.html">Personal Impact Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-resources.html">Resources</a></li>
+
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/edit/main/book/website/communication/os-comms/os-comms-issue-tracking.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/issues/new?title=Issue%20on%20page%20%2Fcommunication/os-comms/os-comms-issue-tracking.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/communication/os-comms/os-comms-issue-tracking.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Issue Tracking</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-purpose-of-your-issues">What is the purpose of your issues?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#issues-per-repository-decentralised-distributed">Issues per Repository (Decentralised/Distributed)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#case-study-mybinder-org">Case study: mybinder.org</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#centralised-issue-repository">Centralised Issue Repository</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparative-table">Comparative Table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">Further Reading</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="issue-tracking">
+<span id="cm-os-comms-issue-tracking"></span><h1>Issue Tracking<a class="headerlink" href="#issue-tracking" title="Permalink to this heading">#</a></h1>
+<p>Most software development projects have some kind of issue board to easily track current issues in the project, such as bug fixing, rolling out new features, or community engagement plans.
+<a class="reference external" href="https://github.com">GitHub</a> (a very popular collaboration platform) has a built-in <a class="reference external" href="https://guides.github.com/features/issues/">issue tracker</a> and <a class="reference external" href="https://help.github.com/en/github/managing-your-work-on-github/about-project-boards">project boards</a> where issues can be collated together to track progress towards a more specific, higher-level goal.</p>
+<p>This section is a discussion around why issue tracking is useful and where you can store them.</p>
+<section id="what-is-the-purpose-of-your-issues">
+<span id="os-comms-issue-tracking-purpose"></span><h2>What is the purpose of your issues?<a class="headerlink" href="#what-is-the-purpose-of-your-issues" title="Permalink to this heading">#</a></h2>
+<p>There are many different reasons for keeping/tracking issues related to a project.
+The platform for issue tracking and the features tracked by those issues can influence how your community interact with your project.</p>
+<p>Mostly, issues are used to track bug reports, feature requests, opportunities for community members to engage, and so on, then a public issue board will allow your community to get a clear overview of what’s coming down the pipeline and how they can get involved.</p>
+<p>Let’s look into centralised and decentralised/distributed issue boards and how they might engage your community.</p>
+<section id="issues-per-repository-decentralised-distributed">
+<span id="os-comms-issue-tracking-purpose-issues"></span><h3>Issues per Repository (Decentralised/Distributed)<a class="headerlink" href="#issues-per-repository-decentralised-distributed" title="Permalink to this heading">#</a></h3>
+<p>If your project is split across multiple repositories, then it’s a good idea to keep the issues specifically related to that module within that repository: a decentralised system.
+This allows your community to focus their attention on what is important to them.</p>
+<p>This approach has several smaller issue boards for each repository (or module) within your codebase.
+This method has a lot of positive outcomes, such as:</p>
+<ul class="simple">
+<li><p>The volume of issues is more manageable</p></li>
+<li><p>Most contributors only need to be aware of issues relating to one or two repositories</p></li>
+<li><p>Contributors can subscribe to notifications or updates from only the repositories that interest them</p></li>
+<li><p>It feels like “divide and conquer”, more people are working on more aspects to move the project as a whole forward</p></li>
+</ul>
+<section id="case-study-mybinder-org">
+<span id="os-comms-issue-tracking-purpose-issues-case-study"></span><h4>Case study: <a class="reference external" href="http://mybinder.org">mybinder.org</a><a class="headerlink" href="#case-study-mybinder-org" title="Permalink to this heading">#</a></h4>
+<p><a class="reference external" href="https://mybinder.org">mybinder.org</a> is a platform facilitating users to easily share reproducible analyses and computational environments with one another in <a class="reference external" href="https://jupyter-notebook.readthedocs.io/en/stable/">Jupyter Notebooks</a> via the cloud.
+This project is spread across a number of different repositories, each one an individual tool that can be used in isolation from the others.
+These are:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/jupyter/repo2docker">repo2docker</a></p></li>
+<li><p><a class="reference external" href="https://github.com/jupyterhub/zero-to-jupyterhub-k8s">JupyterHub for Kubernetes</a></p></li>
+<li><p><a class="reference external" href="https://github.com/jupyterhub/binderhub">BinderHub</a></p></li>
+</ul>
+<p>There are also some tools in the Jupyter ecosystem that are only weakly associated with Binder.
+Tools which Project Binder uses and people associated with Binder contribute to, but so do other unrelated communities.
+Such tools are <a class="reference external" href="https://github.com/jupyterhub/jupyterhub">JupyterHub</a> and <a class="reference external" href="https://github.com/jupyterhub/kubespawner">KubeSpawner</a>.</p>
+<p>Each of these repositories contains hundreds of issues tracking on-going work being performed by the community and scoping future directions for each project to take.</p>
+<p>Can you imagine trying to combine all of these issues into one place?
+It would become very difficult, if not impossible, for someone to find what they are looking for and would require a very clever tagging schema plus instructions for filtering by tag.</p>
+<p>In the Project Binder team’s experience, most community members contribute to just one or maybe two of these projects.
+So having consolidated access to all the issues for all the working parts is not a high priority for their community.</p>
+<p>They find that having distributed issue tracking allows those members of the community who may only work with JupyterHub to comfortably contribute without needing to be familiar with everything that goes into running <a class="reference external" href="https://mybinder.org">mybinder.org</a>.</p>
+</section>
+</section>
+<section id="centralised-issue-repository">
+<span id="os-comms-issue-tracking-purpose-issues-case-centralised-issue"></span><h3>Centralised Issue Repository<a class="headerlink" href="#centralised-issue-repository" title="Permalink to this heading">#</a></h3>
+<p>With a big project, it can be tempting to collate all your issues into one place for the sake of easier management: a centralised system.
+If you are using issues to track a central service, personal to-do lists, and answering questions like if a task is high priority or if it is assigned to someone already, then issue tracking in a centralised system is a good option and it does not necessarily need to be circulated to your wider community.</p>
+<p>However in terms of engaging your community, such a centralised system can be problematic.
+If your issues are elsewhere this can create a lot of barriers to entry for community members, such as:</p>
+<ul class="simple">
+<li><p>Issues are more difficult to discover</p></li>
+<li><p>If they are hosted on another platform (for example, code is on GitHub but issues are on <a class="reference external" href="https://asana.com/">Asana</a>), that’s another tool community members need to learn how to use</p></li>
+<li><p>Issues are separated from the code they are referencing</p></li>
+</ul>
+<p>A very large impact on the community of having a separate issue board is that when people visit your code repository, it looks like an inactive project because there are no issues or conversations going on where the code is hosted.
+This may cause community members to believe that the code is no longer being actively developed/maintained/supported and may choose to use another codebase or software package.</p>
+</section>
+</section>
+<section id="comparative-table">
+<span id="os-comms-issue-tracking-comparative-table"></span><h2>Comparative Table<a class="headerlink" href="#comparative-table" title="Permalink to this heading">#</a></h2>
+<p>The table below compares features of distributed and centralised issue repositories for a multi-repository project.</p>
+<div class="pst-scrollable-table-container"><table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>Feature</p></th>
+<th class="text-center head"><p>Centralised Issue Repo</p></th>
+<th class="text-center head"><p>Distributed Issue Repos</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Global issue search</p></td>
+<td class="text-center"><p>✅</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Hosted by the same platform as the code</p></td>
+<td class="text-center"><p>❓(not guaranteed)</p></td>
+<td class="text-center"><p>✅</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Filter by repository</p></td>
+<td class="text-center"><p>❓(power users*)</p></td>
+<td class="text-center"><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Subscribe to relevant updates</p></td>
+<td class="text-center"><p>❓(power users)</p></td>
+<td class="text-center"><p>✅</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Easy to Discover</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Connected to the Codebase</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✅</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Appears active to community</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Manageable volume</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✅</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>*Power users = These are people who are already familiar enough with a platform to know the gotchas and tricks that make their experience more efficient</p>
+</section>
+<section id="further-reading">
+<h2>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Blog post comparing the convenience and community closeness of Mailing Lists and Forums: <a class="reference external" href="https://psychcentral.com/blog/mailing-lists-versus-forums-community-convenience-closeness/">https://psychcentral.com/blog/mailing-lists-versus-forums-community-convenience-closeness/</a></p></li>
+<li><p>Blog post by <a class="reference external" href="https://github.com/betatim">Tim Head</a>:  <a class="reference external" href="https://betatim.github.io/posts/thoughts-on-collective-thinking/">https://betatim.github.io/posts/thoughts-on-collective-thinking/</a></p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./communication/os-comms"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-purpose-of-your-issues">What is the purpose of your issues?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#issues-per-repository-decentralised-distributed">Issues per Repository (Decentralised/Distributed)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#case-study-mybinder-org">Case study: mybinder.org</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#centralised-issue-repository">Centralised Issue Repository</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparative-table">Comparative Table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">Further Reading</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dionysus
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  The Artist is the creator of beautiful things
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,713 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>The FAIR Principles &#8212; Music</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/book-stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-167881009-1"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-167881009-1');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reproducible-research/rdm/rdm-fair';</script>
+    <script src="../../_static/script.js"></script>
+    <link rel="canonical" href="https://book.the-turing-way.org/reproducible-research/rdm/rdm-fair.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Personal data management" href="rdm-personal.html" />
+    <link rel="prev" title="Data Management Plan" href="rdm-dmp.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content"><a href='https://www.gutenberg.org/files/174/174-h/174-h.htm'>Aesthetics vs. Morality</a></div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://static.dw.com/image/62054308_1004.webp" class="logo__image only-light" alt="Music - Home"/>
+    <script>document.write(`<img src="https://static.dw.com/image/62054308_1004.webp" class="logo__image only-dark" alt="Music - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Will
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../foreword/foreword.html">Foreword</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/navigate.html">Navigating the Handbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/emergent-strategy.html">Emergence as The Turing Way Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/embracing-digital-commons.html">Embracing the Principles of Digital Commons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/community.html">Community and Community Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/governance.html">Governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/cite.html">How to Cite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/faqs.html">Frequently Asked Questions</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../reproducible-research.html">Guide for Reproducible Research</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../overview.html">Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../overview/overview-definitions.html">Definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../overview/overview-benefit.html">Added Advantages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../overview/overview-barriers.html">Barriers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../overview/overview-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../open.html">Open Research</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../open/open-data.html">Open Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../open/open-source.html">Open Source Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../open/open-hardware.html">Open Source Hardware</a></li>
+
+
+
+
+<li class="toctree-l3"><a class="reference internal" href="../open/open-access.html">Open Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../open/open-notebooks.html">Open Notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../open/open-scholarship.html">Open Scholarship</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../open/open-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../open/open-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../vcs.html">Version Control</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../vcs/vcs-workflow.html">Version Control Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vcs/vcs-workflow-branches.html">Version Control and Branches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vcs/vcs-git-general.html">The Git Version Control Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vcs/vcs-git-in-research.html">Git for Research Projects</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../vcs/vcs-git.html">Git Using the Command Line</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../vcs/vcs-git-commit.html">Git Commit Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vcs/vcs-git-compare.html">Retrieving and Comparing Versions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vcs/vcs-git-branches.html">Git Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vcs/vcs-git-merge.html">Merging Branches in Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vcs/vcs-git-interactive.html">Interactive, Visual Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vcs/vcs-github.html">Git Commands to Work on GitHub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vcs/vcs-git-summary.html">Summary Table of Git Commands</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../vcs/vcs-data.html">Version Control for Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vcs/vcs-personal-stories.html">Personal Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vcs/vcs-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vcs/vcs-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../licensing.html">Licensing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../licensing/licensing-compatibility.html">License Compatibililty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../licensing/licensing-ethical-source.html">Ethics-informed Licensing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../licensing/licensing-data.html">Data Licenses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../licensing/licensing-hardware.html">Hardware Licenses</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../licensing/licensing-ml.html">Machine Learning Model Licenses</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../licensing/licensing-ml-case-studies.html">Case Studies: Choosing an ML License</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../licensing/licensing-checklist.html">Checklist</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../rdm.html">Research Data Management</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="rdm-data.html">Research Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-find.html">Finding Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-dmp.html">Data Management Plan</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">The FAIR Principles and Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-personal.html">Personal data management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-storage.html">Data Storage and Organisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-spreadsheets.html">Data Organisation in Spreadsheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-metadata.html">Documentation and Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-methods.html">Methods and Protocols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-elns.html">Electronic Lab Notebooks (ELNs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-data-curation.html">Data Curation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-visualisation.html">Data Visualisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-repository.html">Data Repositories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-sharing.html">Sharing and Archiving Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-article.html">Data Article</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-checklist.html">Checklist</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="rdm-stories.html">Personal Impact Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-resources.html">Resources</a></li>
+
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/edit/main/book/website/reproducible-research/rdm/rdm-fair.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/issues/new?title=Issue%20on%20page%20%2Freproducible-research/rdm/rdm-fair.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/reproducible-research/rdm/rdm-fair.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>The FAIR Principles</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theory">Theory</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fair-principles-and-environmental-sustainability">FAIR principles and environmental sustainability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fair-principles-and-accessibility">FAIR principles and accessibility</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community-involvement">Community involvement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-information">More information</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="the-fair-principles">
+<span id="rr-rdm-fair"></span><h1>The FAIR Principles<a class="headerlink" href="#the-fair-principles" title="Permalink to this heading">#</a></h1>
+<p>The FAIR guiding principles for scientific data management and stewardship <span id="id1">[<a class="reference internal" href="../../afterword/bibliography.html#id23" title="Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony J. Brookes, Tim Clark, Merc Crosas, Ingrid Dillo, Olivier Dumon, Scott Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alasdair J. G. Gray, Paul Groth, Carole Goble, Jeffrey S. Grethe, Jaap Heringa, Peter A. C. t Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons, Abel L. Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn, Morris A. Swertz, Mark Thompson, Johan van der Lei, Erik van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, and Barend Mons. The FAIR Guiding Principles for scientific data management and stewardship. Sci. Data, 3(160018):1–9, Mar 2016. doi:10.1038/sdata.2016.18.">WDA+16</a>]</span> were developed as guidelines to improve the <strong>F</strong>indability, <strong>A</strong>ccessibility, <strong>I</strong>nteroperability and <strong>R</strong>eusability of digital assets; all of which support research reproducibility.
+The FAIR principles play an important role in making your data available to others for reuse.</p>
+<p>It is much easier to make data FAIR if you plan to do this from the beginning of your research project.
+You can plan for this in your Data Management Plan (DMP) (see points 4 and 5 of the <a class="reference internal" href="rdm-dmp.html#rr-rdm-dmp"><span class="std std-ref">Data Management Plan</span></a> chapter).</p>
+<p>Even though the FAIR principles have been defined to allow machines to find and use digital objects automatically, they improve the reusability of data by humans as well.
+The capacity of computational systems to find, access, interoperate, and reuse data, with none or minimal human intervention, is essential in today’s data-driven era, where humans increasingly rely on computational support to deal with data as a result of the increase in <a class="reference external" href="https://www.zdnet.com/article/volume-velocity-and-variety-understanding-the-three-vs-of-big-data/">volume, velocity and
+variety</a>.</p>
+<p>This chapter provides an abstract and broad view of what the FAIR principles are. How to put the FAIR principles into practise is discussed in other sub chapters ( <a class="reference internal" href="#rr-rdm-fair"><span class="std std-ref">Data Organisation in Spreadsheets</span></a>, <a class="reference internal" href="rdm-metadata.html#rr-rdm-metadata"><span class="std std-ref">Documentation and Metadata</span></a> and <a class="reference internal" href="rdm-sharing.html#rr-rdm-sharing"><span class="std std-ref">Sharing and Archiving Data</span></a>). You can also use the <a class="reference external" href="https://f1000researchdata.s3.amazonaws.com/resources/FAIR_Open_GettingStarted.pdf">Wellcome Getting Started Guide</a> or the <a class="reference external" href="https://howtofair.dk/">How To FAIR</a> website to find out more about the FAIR principles and how to get started.</p>
+<figure class="align-default" id="fair-principles">
+<img alt="Illustration of the FAIR principles to show the definition of being Findable, Accessible, Interoperable and Reusable." src="figures/fair-principles.*" />
+<figcaption>
+<p><span class="caption-number">Fig. 47 </span><span class="caption-text"><em>The Turing Way</em> project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: <a class="reference external" href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a>.</span><a class="headerlink" href="#fair-principles" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="theory">
+<span id="rr-rdm-fair-theory"></span><h2>Theory<a class="headerlink" href="#theory" title="Permalink to this heading">#</a></h2>
+<p>In brief, FAIR data should be:</p>
+<p><strong>Findable:</strong> The first step in (re)using data is to find it!
+Descriptive metadata (information about the data such as keywords) is essential.</p>
+<p><strong>Accessible:</strong> Once the user finds the data and software they need to know how to access it.
+Data could be openly available but it is also possible that authentication and authorisation procedures are necessary.</p>
+<p><strong>Interoperable:</strong> Data needs to be integrated with other data and interoperate with applications or workflows.</p>
+<p><strong>Reusable:</strong> Data should be well-described so that they can be used, combined, and extended in different settings.</p>
+<p>You can find a more detailed <a class="reference external" href="https://www.go-fair.org/fair-principles">overview of the FAIR principles by GO FAIR</a> of what the FAIR principles recommend.
+You can also read <a class="reference external" href="https://doi.org/10.5281/zenodo.2248200">A FAIRy tale</a> for an understandable explanation of each principle.</p>
+<p>Making data ‘FAIR’ is not the same as making it ‘open’.
+Accessible means that there is a procedure in place to access the data.
+Data should be as open as possible, and as closed as necessary.</p>
+<p>It is also important to say that the FAIR principles are aspirational: they do not strictly define how to achieve a state of FAIRness, but rather describe a continuum of features, attributes, and behaviours that will move a digital resource closer to that goal.</p>
+<p>The FAIR principles are also applied to software (see [<a class="reference external" href="https://book.the-turing-way.org/afterword/bibliography.html#id10">LGK+20</a>]and [<a class="reference external" href="https://book.the-turing-way.org/afterword/bibliography.html#id9">HCH+20</a>]). Watch a <a class="reference external" href="https://www.youtube.com/watch?v=ME8_NRGRhSs&amp;amp;list=PL1CvC6Ez54KDvJbbdLn5rPvf1kInifEh9&amp;amp;index=16">ten minute video on FAIR software</a> for a short explanation.</p>
+</section>
+<section id="fair-principles-and-environmental-sustainability">
+<h2>FAIR principles and environmental sustainability<a class="headerlink" href="#fair-principles-and-environmental-sustainability" title="Permalink to this heading">#</a></h2>
+<blockquote>
+<div><p>“FAIR practices can result in highly efficient code implementations, reduce the need to retrain models, and reduce unnecessary data generation/storage, thus reducing the overall carbon footprint.
+As a result, green computing and FAIR practices may boht stimulate innovation and reduce financial costs.” - <span id="id2">[<a class="reference internal" href="../../afterword/bibliography.html#id201" title="Loic Lannelongue, Hans-Erik G. Aronson, Alex Bateman, Ewan Birney, Talia Caplan, Martin Juckes, Johanna McEntyre, Andrew D. Morris, Gerry Reilly, and Michael Inouye. Greener principles for environmentally sustainable computational science. Nature Computational Science, 2023. URL: https://doi.org/10.1038/s43588-023-00461-y, doi:10.1038/s43588-023-00461-y.">LAB+23</a>]</span></p>
+</div></blockquote>
+</section>
+<section id="fair-principles-and-accessibility">
+<h2>FAIR principles and accessibility<a class="headerlink" href="#fair-principles-and-accessibility" title="Permalink to this heading">#</a></h2>
+<p>The Accessible in FAIR is not equal to ensuring that your research objects are accessibles to all users.
+For this, the term “actually accessible” has been coined by <span id="id3">[<a class="reference internal" href="../../afterword/bibliography.html#id203" title="Randy Colon, Abigail Goben, and Sebastian Karcher. Actually accessible data: an update and a call to action. Journal of Librarianship and Scholarly Communication, 2023. URL: https://doi.org/10.31274/jlsc.15449, doi:10.31274/jlsc.15449.">CGK23</a>]</span> to refer to data that is “easy to locate, obtain, interpret, use, share, and analyze for everybody, including disabled people.”</p>
+</section>
+<section id="community-involvement">
+<span id="rr-rdm-fair-community"></span><h2>Community involvement<a class="headerlink" href="#community-involvement" title="Permalink to this heading">#</a></h2>
+<p>Various online resources are provided for people who are working in the life sciences, to guide them in ensuring FAIRness in their data, providing them with tools and advice for good data management at various stages of their work. Two prominent ones include:</p>
+<ul class="simple">
+<li><p>Under the <a class="reference external" href="https://faircookbook.elixir-europe.org/content/home.html">FAIR Cookbook</a>, several resources are offering guidance and assistance in FAIR data management.
+The FAIR Cookbook is designed to serve a variety of audience types and involved in different stages of data management life cycle.
+The FAIR Cookbook is developed and maintained by life sciences professionals, both in the academia and industry sectors, including members of the ELIXIR community.</p></li>
+<li><p>Under <a class="reference external" href="https://rdmkit.elixir-europe.org/">ELIXIR Research Data Management Kit (RDMkit)</a>, resources are provided for life scientists to guide them in better management of their research data in adhering to the FAIR Principles.
+It is an attempt to help researchers work at different capacities, both in individual and collaborative workspaces.
+The RDMkit is open for suggestions from anyone, as long as they abide by the <a class="reference external" href="https://rdmkit.elixir-europe.org/how_to_contribute">contributor responsibilities</a>.</p></li>
+</ul>
+<p>Many groups and organisations are working to define guidance and tools to help researchers and other stakeholders (like librarians, funders, publishers, and trainers) make data more FAIR.
+There are two global initiatives that act as umbrella organisations and reference points for many discipline-specific efforts, including the ones listed above: <a class="reference external" href="https://www.go-fair.org">GOFAIR</a> and the <a class="reference external" href="https://www.rd-alliance.org">Research Data Alliance (RDA)</a>.</p>
+<ul class="simple">
+<li><p>Under GOFAIR, there are many <a class="reference external" href="https://www.go-fair.org/implementation-networks">Implementation Networks (INs)</a> committed to implementing the FAIR principles.</p></li>
+<li><p>Under the RDA, there are several groups tackling different aspects relevant to the RDM life cycle. Among these, one group, the <a class="reference external" href="https://www.rd-alliance.org/groups/fair-data-maturity-model-wg">FAIR Data Maturity Model Working Group</a> is reviewing existing efforts, building on them to define a standard set of common assessment criteria for the evaluation of FAIRness.</p></li>
+</ul>
+</section>
+<section id="more-information">
+<h2>More information<a class="headerlink" href="#more-information" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Deep dive into the <a class="reference external" href="https://www.youtube.com/watch?v=xx2wHxQfcnA">FAIR principles by Dr. Maryann Martone</a> (45 minute video)</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./reproducible-research/rdm"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="rdm-dmp.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Data Management Plan</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rdm-personal.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Personal data management</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theory">Theory</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fair-principles-and-environmental-sustainability">FAIR principles and environmental sustainability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fair-principles-and-accessibility">FAIR principles and accessibility</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community-involvement">Community involvement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-information">More information</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dionysus
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  The Artist is the creator of beautiful things
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,792 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>First steps on GitHub &#8212; Music</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/book-stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-167881009-1"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-167881009-1');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'collaboration/github-novice/github-novice-firststeps';</script>
+    <script src="../../_static/script.js"></script>
+    <link rel="canonical" href="https://book.the-turing-way.org/collaboration/github-novice/github-novice-firststeps.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content"><a href='https://www.gutenberg.org/files/174/174-h/174-h.htm'>Aesthetics vs. Morality</a></div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://static.dw.com/image/62054308_1004.webp" class="logo__image only-light" alt="Music - Home"/>
+    <script>document.write(`<img src="https://static.dw.com/image/62054308_1004.webp" class="logo__image only-dark" alt="Music - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Will
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../foreword/foreword.html">Foreword</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/navigate.html">Navigating the Handbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/emergent-strategy.html">Emergence as The Turing Way Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/embracing-digital-commons.html">Embracing the Principles of Digital Commons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/community.html">Community and Community Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/governance.html">Governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/cite.html">How to Cite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/faqs.html">Frequently Asked Questions</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../reproducible-research/reproducible-research.html">Guide for Reproducible Research</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/overview.html">Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-definitions.html">Definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-benefit.html">Added Advantages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-barriers.html">Barriers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/open.html">Open Research</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-data.html">Open Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-source.html">Open Source Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-hardware.html">Open Source Hardware</a></li>
+
+
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-access.html">Open Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-notebooks.html">Open Notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-scholarship.html">Open Scholarship</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/vcs.html">Version Control</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-workflow.html">Version Control Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-workflow-branches.html">Version Control and Branches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-general.html">The Git Version Control Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-in-research.html">Git for Research Projects</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git.html">Git Using the Command Line</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-commit.html">Git Commit Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-compare.html">Retrieving and Comparing Versions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-branches.html">Git Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-merge.html">Merging Branches in Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-interactive.html">Interactive, Visual Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-github.html">Git Commands to Work on GitHub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-summary.html">Summary Table of Git Commands</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-data.html">Version Control for Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-personal-stories.html">Personal Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/licensing.html">Licensing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-compatibility.html">License Compatibililty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ethical-source.html">Ethics-informed Licensing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-data.html">Data Licenses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-hardware.html">Hardware Licenses</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ml.html">Machine Learning Model Licenses</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ml-case-studies.html">Case Studies: Choosing an ML License</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-checklist.html">Checklist</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/rdm.html">Research Data Management</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-data.html">Research Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-find.html">Finding Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-dmp.html">Data Management Plan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-fair.html">The FAIR Principles and Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-personal.html">Personal data management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-storage.html">Data Storage and Organisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-spreadsheets.html">Data Organisation in Spreadsheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-metadata.html">Documentation and Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-methods.html">Methods and Protocols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-elns.html">Electronic Lab Notebooks (ELNs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-data-curation.html">Data Curation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-visualisation.html">Data Visualisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-repository.html">Data Repositories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-sharing.html">Sharing and Archiving Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-article.html">Data Article</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-checklist.html">Checklist</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-stories.html">Personal Impact Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-resources.html">Resources</a></li>
+
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/edit/main/book/website/collaboration/github-novice/github-novice-firststeps.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/issues/new?title=Issue%20on%20page%20%2Fcollaboration/github-novice/github-novice-firststeps.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/collaboration/github-novice/github-novice-firststeps.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>First steps on GitHub</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-github-account">1. Create a GitHub account</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-repository">2. Create a repository</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-your-readme-md-file">3. Edit your <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#navigating-the-github-editing-interface">Navigating the GitHub editing interface</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tips-for-writing-your-readme-file">Tips for writing your README file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-or-saving-your-changes">Committing - or saving - your changes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-license-to-your-repository">4. Add a license to your repository</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="first-steps-on-github">
+<span id="cl-github-novice-firststeps"></span><h1>First steps on GitHub<a class="headerlink" href="#first-steps-on-github" title="Permalink to this heading">#</a></h1>
+<p>Here, we provide step-by-step instructions to get started with GitHub.</p>
+<section id="create-a-github-account">
+<h2>1. Create a GitHub account<a class="headerlink" href="#create-a-github-account" title="Permalink to this heading">#</a></h2>
+<p>Go to <a class="github reference external" href="https://github.com/"></a> and create a new account using the sign up to GitHub box.</p>
+</section>
+<section id="create-a-repository">
+<h2>2. Create a repository<a class="headerlink" href="#create-a-repository" title="Permalink to this heading">#</a></h2>
+<p>When you have created a new account and you are logged in, you need to create a new repository.</p>
+<p>A repository or repo is the online space where you store all of the documents, data and other files for your project.</p>
+<ul class="simple">
+<li><p>To create the new repository, you need to click on the + sign in the top right corner (in the black band at the top of your window) and then click New repository. This will take you to a page that looks like a form.</p></li>
+<li><p>You will see the name of your account and you need to fill in a repository name next to it.</p></li>
+<li><p>Also, leave the box ticked for “public” (so your repository is open to all) and then tick the box to create a “README file”.</p></li>
+<li><p>Then click the green create repository button at the bottom.</p></li>
+</ul>
+<p>This is what you should see now.
+It is the landing page for your repository.
+The diagram below explains what all the buttons, tabs and other things do!</p>
+<figure class="align-left" id="github-basic-diagram">
+<img alt="Annotated diagram of repository after its creation, explaining the main features. The main features are explained in the figure legend." src="figures/github-basic-diagram.*" />
+<figcaption>
+<p><span class="caption-text">Annotated diagram of repository after its basic creation, explaining the main features. On the left side of the webpage we have the following features:</span><a class="headerlink" href="#github-basic-diagram" title="Permalink to this image">#</a></p>
+<div class="legend">
+<ul class="simple">
+<li><p><strong>1. Username:</strong> GitHub user’s name (account). In this example, the username is “EKaroune”.</p></li>
+<li><p><strong>2. Repository:</strong> project directory (also known as repo). In this example, the repository name is “trial-repo”.</p></li>
+<li><p><strong>3. Code:</strong> this tab brings you back to your landing page. It shows you the folders that you have made in the repo.</p></li>
+<li><p><strong>4. Main:</strong> this is your default development branch or active branch of your repository.</p></li>
+<li><p><strong>5. Branch:</strong> parallel version(s) of your repository.</p></li>
+<li><p><strong>6. <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file:</strong> this file contains basic information about your project (in this case it only has the project name: “trial-repo”. When we plan to make a website, this will be rendered as a landing (front) page for your site.</p></li>
+</ul>
+<p>On the right side of the webpage we have the following features:</p>
+<ul class="simple">
+<li><p><strong>7. Green Code button:</strong> click it to download your repository locally.</p></li>
+<li><p><strong>8. ‘+’ symbol:</strong> where you can create new repository, import repos and create new issues.</p></li>
+<li><p><strong>9. Fork:</strong> create a personal copy of another user’s repo. The number shows how many forks there are of your current repository.</p></li>
+<li><p><strong>10: Add file:</strong> create or upload a file to your repository.</p></li>
+<li><p><strong>11: Commits/clock symbol:</strong> click to see the history of this file as a list of all the edits (commits) saved at different time points.</p></li>
+<li><p><strong>12: Edit/Pencil symbol:</strong> click this pencil symbol to edit your <a class="reference external" href="http://README.md">README.md</a> file.</p></li>
+</ul>
+</div>
+</figcaption>
+</figure>
+</section>
+<section id="edit-your-readme-md-file">
+<h2>3. Edit your <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file<a class="headerlink" href="#edit-your-readme-md-file" title="Permalink to this heading">#</a></h2>
+<p>Unless you have added any other files or included a license file during repo creation, you should have one file in your repository now - <a class="reference external" href="http://README.md">README.md</a>.
+We’ll need to edit this file to add information about the repo.
+This file is a Markdown file; you can see this because it has “.md” after the name of the file.
+This is where you start to use the Markdown formatting.
+Whatever you write in this file will be shown on the landing (front) page of your project on GitHub, so use it to tell people all about your project.</p>
+<section id="navigating-the-github-editing-interface">
+<h3>Navigating the GitHub editing interface<a class="headerlink" href="#navigating-the-github-editing-interface" title="Permalink to this heading">#</a></h3>
+<p>To edit your <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file:</p>
+<ul class="simple">
+<li><p>You can click on the pencil symbol in the top right of the central box on your landing page.</p></li>
+</ul>
+<p><strong>Or</strong></p>
+<ul class="simple">
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file and then click the pencil symbol.</p></li>
+</ul>
+<p>You can now edit the file.
+We’ll talk about how to save your changes after some pointers on writing a good README.</p>
+<figure class="align-left" id="github-readme-before-edit">
+<img alt="Annotated diagram of README.md file, if you click on the file name on your landing page. The main features are explained in the figure legend." src="figures/github-readme-before-edit.*" />
+<figcaption>
+<p><span class="caption-text">Annotated diagram of <a class="reference external" href="http://README.md">README.md</a> file, if you click on the file name on your landing page.</span><a class="headerlink" href="#github-readme-before-edit" title="Permalink to this image">#</a></p>
+<div class="legend">
+<ul class="simple">
+<li><p><strong>1. Repository and current file:</strong> the repo name and the name of the file you are viewing.</p></li>
+<li><p><strong>2. Main branch:</strong> currently active branch (“main” is the default). Use to change to different branches of your repo (if there are more branches previously created).</p></li>
+<li><p><strong>3. Contributors:</strong> number of contributors (users) to your file.</p></li>
+<li><p><strong>4. <a class="reference external" href="http://README.md">README.md</a> file content:</strong> the content of your <a class="reference external" href="http://README.md">README.md</a> file appears here. This content will expand once we add more information..</p></li>
+<li><p><strong>5. Raw file:</strong> view the raw markdown text file.</p></li>
+<li><p><strong>6. Blame:</strong> view the last modification made to each line of the file. It can be used to track when and who made changes and go back to older versions of the file to fix bugs.</p></li>
+<li><p><strong>7. Edit file:</strong> click this pencil to edit your <a class="reference external" href="http://README.md">README.md</a> file.</p></li>
+<li><p><strong>8. Delete file:</strong> click the bin to delete this file.</p></li>
+</ul>
+</div>
+</figcaption>
+</figure>
+<figure class="align-left" id="github-readme-after-edit">
+<img alt="Annotated diagram of README.md file in edit mode – before editing. Explained in the title." src="figures/github-readme-after-edit.*" />
+<figcaption>
+<p><span class="caption-text">Annotated diagram of <a class="reference external" href="http://README.md">README.md</a> file in edit mode – before editing.</span><a class="headerlink" href="#github-readme-after-edit" title="Permalink to this image">#</a></p>
+<div class="legend">
+<ul class="simple">
+<li><p><strong>1. Preview changes:</strong> press to see your text rendered (how it would appear on GitHub or on a web page).</p></li>
+<li><p><strong>2. Edit file:</strong> press this tab to edit the content of your <a class="reference external" href="http://README.md">README.md</a> file.</p></li>
+<li><p><strong>3. Add content to <a class="reference external" href="http://README.md">README.md</a>:</strong> write the Markdown text for your <a class="reference external" href="http://README.md">README.md</a> file. You currently only have the repository title in this file.</p></li>
+</ul>
+</div>
+</figcaption>
+</figure>
+</section>
+<section id="tips-for-writing-your-readme-file">
+<h3>Tips for writing your README file<a class="headerlink" href="#tips-for-writing-your-readme-file" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Keep it simple! When you’re working in any field, whether it’s software engineering or astrophysics, you’ll learn and use jargon – terms that have a special meaning to your field but likely won’t make sense to anyone who isn’t part of that field. Too much jargon can confuse newcomers, so use simple language and define all potentially unfamiliar terms here.</p></li>
+<li><p>Share your project with others - describe what you are doing now and what you want to do in the future.</p></li>
+<li><p>Tell people who you are and how you can be contacted.</p></li>
+</ul>
+<p><strong>NOTE: If you’re having trouble getting started, it’s a good idea to look at other peoples’ <code class="docutils literal notranslate"><span class="pre">README.md</span></code> files.</strong></p>
+<p>If you can’t get your raw markdown content to render in the way you want, it is also a good idea to find a file that has what you want and then look at the raw file.
+You can copy and paste other people’s raw file content into your <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file and then edit it.</p>
+<p>Here is an example of a really well formatted <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file: <a class="reference external" href="https://github.com/KirstieJane/STEMMRoleModels/blob/gh-pages/README.md">STEMM Role Models App</a></p>
+<p>If you click the link above, it will take you to their README file. You can use this as a template for your <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file.</p>
+<ul class="simple">
+<li><p>To look at the raw markdown file you need to click on the raw button (top right of the white box).</p></li>
+<li><p>This takes you to the markdown raw file that is rendered into a nicely formatted <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file on GitHub.</p></li>
+<li><p>Now just copy and paste it into your <code class="docutils literal notranslate"><span class="pre">README.md</span></code> edit tab. You can now edit this for your project.</p></li>
+<li><p>Remember to check what it looks like by clicking on the preview changes tab.</p></li>
+<li><p>When you have finished editing, you need to scroll down to the bottom of the page and press the green commit changes button.</p></li>
+</ul>
+<figure class="align-left" id="github-edited-readme">
+<img alt="Annotated diagram of README.md file in edit mode – with a template added. Features are explained in the figure legend." src="figures/github-edited-readme.*" />
+<figcaption>
+<p><span class="caption-text">Annotated diagram of <a class="reference external" href="http://README.md">README.md</a> file in edit mode – with a template added.</span><a class="headerlink" href="#github-edited-readme" title="Permalink to this image">#</a></p>
+<div class="legend">
+<ul class="simple">
+<li><p><strong>1. Using MarkDown to add content to <a class="reference external" href="http://README.md">README.md</a>:</strong> the Markdown (denoted by ‘.md’ in the file extension) text for your <a class="reference external" href="http://README.md">README.md</a> file. This example shows the template file that has different sections (headers and subheaders are created by using one or more of ‘#’ symbol. See the <a class="reference internal" href="../../community-handbook/consistency/consistency-formatting.html#ch-consistency-formatting-hr-markdown"><span class="std std-ref">formatting consistency section of the Community Handbook</span></a> for some more information on using Markdown.</p></li>
+</ul>
+</div>
+</figcaption>
+</figure>
+</section>
+<section id="committing-or-saving-your-changes">
+<h3>Committing - or saving - your changes<a class="headerlink" href="#committing-or-saving-your-changes" title="Permalink to this heading">#</a></h3>
+<p>Committing your changes is like hitting the “save button” for a file.
+GitHub will not automatically save your changes, so it’s important not to skip this step.</p>
+<p>Whatever changes you have made in the file will be deposited into your repository.</p>
+<p>It is good practice to write a descriptive commit title and a short description of what you have done in the commit changes box.
+So something like - commit title: ‘first edit of the readme file’; description: ‘copied template from … and edited it with the details of this project’.
+This information about the commit is called a “commit message”, and the commit title will enable you to quickly look through the history of changes for a file (which is why making them descriptive is so important - it’s like leaving a helpful note to your future self).</p>
+<p>You can see a list of your commits (or your “commit history”) by clicking the clock symbol on your landing page or within the page for each file.</p>
+</section>
+</section>
+<section id="add-a-license-to-your-repository">
+<h2>4. Add a license to your repository<a class="headerlink" href="#add-a-license-to-your-repository" title="Permalink to this heading">#</a></h2>
+<p>It is important that all of your work has a license from the very beginning or no one can reuse it. Licenses tell other researchers how they are able to reuse, modify and remix your work.
+No license implies that others are <em>not</em> allowed to use your work, even with attribution.
+So it is better to include a license that lets people know what they can and can’t do and how to give you credit for your work.</p>
+<p>Depending on your field, much of your work may be documents with only some data or code.
+The standard licenses offered on GitHub are most approriate for software and won’t really be the right kind for documents.</p>
+<p><a class="reference external" href="https://creativecommons.org/licenses/">Creative commons</a> licenses are the best to use for this purpose, and the most open of these is the CC BY 4.0.</p>
+<p>To add a license to your repository, the first thing to do is create a <code class="docutils literal notranslate"><span class="pre">LICENSE.md</span></code> file:</p>
+<ul class="simple">
+<li><p>To do this, click on the Add file button, and click create file. This will give you a blank file.</p></li>
+<li><p>Then, you need to name the file, so call it <code class="docutils literal notranslate"><span class="pre">LICENSE.md</span></code>. This makes it into a markdown file.</p></li>
+<li><p>You can find all the creative commons licenses in the link above so copy the text of the license you want and then paste it into this file.</p></li>
+<li><p>Don’t forget to press the green commit new file button at the bottom and write a commit message to describe what you have done.</p></li>
+<li><p>You can also add a link to the license to the bottom of your <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file. Here is a link to a repository that you can copy to add in a <a class="reference external" href="https://github.com/santisoler/cc-licenses">CC BY 4.0 license</a>.
+It has a text file for your <code class="docutils literal notranslate"><span class="pre">LICENSE.md</span></code> file and also a shield (or badge) that you can put at the bottom of your <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file.</p></li>
+</ul>
+<p>You can find more information about licenses in the <a class="reference internal" href="../../reproducible-research/licensing.html#rr-licensing"><span class="std std-ref">Licensing</span></a> chapter of The Turing Way.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./collaboration/github-novice"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-github-account">1. Create a GitHub account</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-repository">2. Create a repository</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-your-readme-md-file">3. Edit your <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#navigating-the-github-editing-interface">Navigating the GitHub editing interface</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tips-for-writing-your-readme-file">Tips for writing your README file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-or-saving-your-changes">Committing - or saving - your changes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-license-to-your-repository">4. Add a license to your repository</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dionysus
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  The Artist is the creator of beautiful things
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

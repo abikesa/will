@@ -1,0 +1,736 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Ethical Considerations when Choosing an Open Source Governance Model &#8212; Music</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/book-stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-167881009-1"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-167881009-1');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ethical-research/ethics-open-source-governance';</script>
+    <script src="../_static/script.js"></script>
+    <link rel="canonical" href="https://book.the-turing-way.org/ethical-research/ethics-open-source-governance.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content"><a href='https://www.gutenberg.org/files/174/174-h/174-h.htm'>Aesthetics vs. Morality</a></div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://static.dw.com/image/62054308_1004.webp" class="logo__image only-light" alt="Music - Home"/>
+    <script>document.write(`<img src="https://static.dw.com/image/62054308_1004.webp" class="logo__image only-dark" alt="Music - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Will
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../foreword/foreword.html">Foreword</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../foreword/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../foreword/navigate.html">Navigating the Handbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../foreword/emergent-strategy.html">Emergence as The Turing Way Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../foreword/embracing-digital-commons.html">Embracing the Principles of Digital Commons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../foreword/community.html">Community and Community Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../foreword/governance.html">Governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../foreword/cite.html">How to Cite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../foreword/faqs.html">Frequently Asked Questions</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../reproducible-research/reproducible-research.html">Guide for Reproducible Research</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../reproducible-research/overview.html">Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/overview/overview-definitions.html">Definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/overview/overview-benefit.html">Added Advantages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/overview/overview-barriers.html">Barriers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/overview/overview-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../reproducible-research/open.html">Open Research</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/open/open-data.html">Open Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/open/open-source.html">Open Source Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/open/open-hardware.html">Open Source Hardware</a></li>
+
+
+
+
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/open/open-access.html">Open Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/open/open-notebooks.html">Open Notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/open/open-scholarship.html">Open Scholarship</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/open/open-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/open/open-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../reproducible-research/vcs.html">Version Control</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/vcs/vcs-workflow.html">Version Control Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/vcs/vcs-workflow-branches.html">Version Control and Branches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/vcs/vcs-git-general.html">The Git Version Control Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/vcs/vcs-git-in-research.html">Git for Research Projects</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reproducible-research/vcs/vcs-git.html">Git Using the Command Line</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reproducible-research/vcs/vcs-git-commit.html">Git Commit Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reproducible-research/vcs/vcs-git-compare.html">Retrieving and Comparing Versions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reproducible-research/vcs/vcs-git-branches.html">Git Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reproducible-research/vcs/vcs-git-merge.html">Merging Branches in Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reproducible-research/vcs/vcs-git-interactive.html">Interactive, Visual Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reproducible-research/vcs/vcs-github.html">Git Commands to Work on GitHub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reproducible-research/vcs/vcs-git-summary.html">Summary Table of Git Commands</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/vcs/vcs-data.html">Version Control for Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/vcs/vcs-personal-stories.html">Personal Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/vcs/vcs-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/vcs/vcs-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../reproducible-research/licensing.html">Licensing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/licensing/licensing-compatibility.html">License Compatibililty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/licensing/licensing-ethical-source.html">Ethics-informed Licensing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/licensing/licensing-data.html">Data Licenses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/licensing/licensing-hardware.html">Hardware Licenses</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reproducible-research/licensing/licensing-ml.html">Machine Learning Model Licenses</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reproducible-research/licensing/licensing-ml-case-studies.html">Case Studies: Choosing an ML License</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/licensing/licensing-checklist.html">Checklist</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../reproducible-research/rdm.html">Research Data Management</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-data.html">Research Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-find.html">Finding Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-dmp.html">Data Management Plan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-fair.html">The FAIR Principles and Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-personal.html">Personal data management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-storage.html">Data Storage and Organisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-spreadsheets.html">Data Organisation in Spreadsheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-metadata.html">Documentation and Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-methods.html">Methods and Protocols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-elns.html">Electronic Lab Notebooks (ELNs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-data-curation.html">Data Curation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-visualisation.html">Data Visualisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-repository.html">Data Repositories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-sharing.html">Sharing and Archiving Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-article.html">Data Article</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-checklist.html">Checklist</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-stories.html">Personal Impact Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reproducible-research/rdm/rdm-resources.html">Resources</a></li>
+
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/edit/main/book/website/ethical-research/ethics-open-source-governance.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/issues/new?title=Issue%20on%20page%20%2Fethical-research/ethics-open-source-governance.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/ethical-research/ethics-open-source-governance.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Ethical Considerations when Choosing an Open Source Governance Model</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation-and-background">Motivation and Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ethical-governance-starts-with-self-reflection">Ethical Governance Starts with Self-Reflection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ethical-governance-is-a-continuous-process">Ethical Governance is a Continuous Process</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ethics-need-governance-to-become-actionable">Ethics Need Governance to become Actionable</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#do-not-rely-on-technology-to-do-your-ethics-for-you">Do Not Rely on Technology to do Your Ethics for You</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-resources">Additional Resources</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="ethical-considerations-when-choosing-an-open-source-governance-model">
+<span id="er-ethics-open-source-governance"></span><h1>Ethical Considerations when Choosing an Open Source Governance Model<a class="headerlink" href="#ethical-considerations-when-choosing-an-open-source-governance-model" title="Permalink to this heading">#</a></h1>
+<section id="summary">
+<span id="er-ethics-open-source-governance-summary"></span><h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<p>Open source projects should be rooted in ethical principles.
+Sharing the code so that anyone can use it, welcoming contributors and creating communities around specific projects are the core of open source.
+But open source communities also have the responsibility to ensure they build a safe and inclusive environment, understand who might be affected by their projects or check that their tools are not being misused.
+Therefore, Open Source Governance Models, which provide a structure for decision making and community feedback in open source projects, should embed those ethical considerations within their structure, but the framework to do so is far from well-established.
+This chapter discusses some of the key points to take into consideration when designing and implementing ethical guidelines in governance models.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>What does ethics in governance mean?</strong></p>
+<p><em>Ethical behaviour in governance is defined as the way in which stakeholders try to manage collective action from the perspective, and in the interest, of the majority, thus avoiding damaging behaviours, and through a better control of the power and responsibilities of the leaders. In the area of governance, therefore, ethics aims at raising awareness of the others’ rights and common needs, by imposing some principles of minimum requirement.</em></p>
+<p>Source: Dessain, V., Meier, O., &amp; Salas, V. (2011). <span id="id1">[<a class="reference internal" href="../afterword/bibliography.html#id141" title="Vincent Dessain, Olivier Meier, and Vicente Salas. Corporate Governance and Ethics: Shareholder Reality, Social Responsibility or Institutional Necessity? M&#64;n&#64;gement, 11(2):65–79, February 2011. URL: https://www.cairn.info/revue-management-2008-2-page-65.htm.">DMS11</a>]</span>.</p>
+</div>
+</section>
+<section id="motivation-and-background">
+<span id="er-ethics-open-source-governance-motivation"></span><h2>Motivation and Background<a class="headerlink" href="#motivation-and-background" title="Permalink to this heading">#</a></h2>
+<p>When setting up open source projects, it is important to pick a structure for organising the community that takes into account ethical considerations.
+The way that your governance model is designed has a significant impact on the ethics, diversity and inclusion in your project.
+Critically examining the implied ethics of a particular structure is a crucial part of the process of selecting one.
+However, it is difficult to know where to start when planning governance structure for your open source projects.
+It can be even more challenging when considering if a particular governance model align with ethical framework of your project.
+Therefore, we have designed this chapter to offer some starting points to consider.</p>
+<p><em>This chapter is adapted a speedblog from the Collaborations Workshop 2022, authored by  Yo Yehudi,
+Arielle Bennett, Gemma Turon, Declan Bays, Sarah Gibson, Stephan Druskat, Yadira Sanchez, Sophia Batchelor, which is published under a CC-BY license. Read the original article on Software Sustainability Institute’s Blog page: <a class="reference external" href="https://software.ac.uk/blog/2022-07-07-ethical-considerations-your-open-source-governance">Ethical Considerations for Your Open Source Governance</a></em></p>
+</section>
+<section id="ethical-governance-starts-with-self-reflection">
+<span id="er-ethics-open-source-governance-selfreflection"></span><h2>Ethical Governance Starts with Self-Reflection<a class="headerlink" href="#ethical-governance-starts-with-self-reflection" title="Permalink to this heading">#</a></h2>
+<p>The process of interrogating the ethics of a governance model starts with <a class="reference internal" href="self-reflection.html#er-self-reflection"><span class="std std-ref">Self Reflection</span></a> on the nature and intention of your project.
+Take things right back to first principles and ask yourself (and the project team):</p>
+<ul class="simple">
+<li><p>Why are you doing this project?</p></li>
+<li><p>Who is the project for?</p></li>
+<li><p>Who creates and maintains it?</p></li>
+<li><p>How will project be used?</p></li>
+</ul>
+<p>These questions may not always be captured in a general document such as the README page, however by scoping the impact and influence of a project before it begins, a team can lay an ethical foundation from the outset.</p>
+<p>For many projects that are community led, this means involving the people that are affected by the project’s outcome in the design, development, and deployment stages.
+True co-creation is an active process of inclusion, and there are many levels of engagement that can be tailored to a projects’ individual needs (see the figure - Arnstein’s Ladder of Citizen Participation), which a governance model might also need to take into account, for example, how is delegated power dealt with by the project?</p>
+<figure class="align-default" id="ladder-of-participation">
+<img alt="Colourful graphic of Arnstein's Ladder of Participation (1969) drawn by Juliet Young. A rainbow ladder describes the different types of participation in research - manipulation, educating, informing, consultation, placation, partnership, delegated power and citizen control." src="figures/ladder-of-participation.*" />
+<figcaption>
+<p><span class="caption-text">Arnstein’s Ladder of Citizen Participation, illustration credit - <a class="reference external" href="https://twitter.com/juliet_young1/status/1384604477697761281">&#64;clinical.creative.psychologist (Juliet Young)</a></span><a class="headerlink" href="#ladder-of-participation" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>No open source project is an island.
+The goal of making projects open source is to explicitly invite the kind of use and collaboration which leads to a community of contributors and collaborators; making the world a better place, one commit at a time.
+It’s important that the governance model you select provides robust mechanisms for the level of community participation you are hoping to achieve with your project.
+Self-reflection is a useful starting point to guide your decision making.</p>
+</section>
+<section id="ethical-governance-is-a-continuous-process">
+<span id="er-ethics-open-source-governance-continuous-process"></span><h2>Ethical Governance is a Continuous Process<a class="headerlink" href="#ethical-governance-is-a-continuous-process" title="Permalink to this heading">#</a></h2>
+<p>There are many ways in which your project can (and probably will) change over its lifetime, and some of these changes may be unexpected.
+For example, your software might start being used in domains you have not considered, it might experience a faster growth rate than you have expected, or you may need to decide how to handle an influx of new contributors.</p>
+<p>This may also mean that you have to change the way that the project is run, to actively include new parts of the community, deal with a surge in contributions, or face new challenges.
+In this scenario, try and reflect the ways in which the governance of your project should evolve to reflect the ethics you commit to.
+For instance, is your governance structure built to allow the whole community to participate and influence a project that will in turn influence themselves and their work?</p>
+<p>It may feel like a giant leap to go from, a free-form do-ocracy where contributors pitch in according to their personal priorities, to something more structured, or to give up your position of benevolent dictator, or to introduce different voting rules for the steering committee, but if you want your project to reflect your ethics, you will need to allow your ethics to impact the project, and iterate on this process.
+It is a bit like putting debugging checkpoints in the way you run your project: run, but halt to reflect if you encounter a state that is unethical, based on your definition of ethical.</p>
+<p>In short: <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">(ethical</span> <span class="pre">==</span> <span class="pre">true)</span> <span class="pre">{</span> <span class="pre">//</span> <span class="pre">Do</span> <span class="pre">stuff</span> <span class="pre">}</span> <span class="pre">else</span> <span class="pre">{</span> <span class="pre">//</span> <span class="pre">FIXME</span> <span class="pre">}</span></code></p>
+</section>
+<section id="ethics-need-governance-to-become-actionable">
+<span id="er-ethics-open-source-governance-action"></span><h2>Ethics Need Governance to become Actionable<a class="headerlink" href="#ethics-need-governance-to-become-actionable" title="Permalink to this heading">#</a></h2>
+<p>Open source project communities may already have an implicit set of ethics regarding their project in place.
+However, unless these ethics are being made explicit, and inform a structured model of governance, they will remain inconsequential or, as Jo Freeman has put it in her essay <span id="id2">[<a class="reference internal" href="../afterword/bibliography.html#id142" title="The Tyranny of Stuctureless. January 2012. [Online; accessed 19. May 2022]. URL: https://www.jofreeman.com/joreen/tyranny.htm.">Fre12</a>]</span>, impotent.</p>
+<p>To empower your project to act on your ethics, it will need some governance model to adhere to.
+There already exist a number of more-or-less established governance models and you can take a look at the resources section of this chapter for links to more information on them.
+Keep in mind, though, that not all of them may cater well for an ethical framework or the specific ethical framework you have in mind.</p>
+</section>
+<section id="do-not-rely-on-technology-to-do-your-ethics-for-you">
+<span id="er-ethics-open-source-governance-technology"></span><h2>Do Not Rely on Technology to do Your Ethics for You<a class="headerlink" href="#do-not-rely-on-technology-to-do-your-ethics-for-you" title="Permalink to this heading">#</a></h2>
+<p>In an age of automation, bots, and exceptional investment into AI, you might be inclined to think “This all sounds like a heavy workload - how do I even get started?” You might consider a couple of options -</p>
+<ol class="arabic simple">
+<li><p>Do I adopt an existing governance model?</p></li>
+<li><p>Maybe I should get a computer system to do it for me, or at least help me out?</p></li>
+</ol>
+<p>Pulling a governance system out of the box is a great way to get started, but don’t assume that because a governance system has been in use before - perhaps even successfully - that the governance system has all the ethical solutions worked out, or even all the practical challenges have been considered.
+For instance, the “benevolent dictator for life” (BDFL) open source governance model has practical as well as ethical issues: what if that BDFL has an unexpected health crisis and disappears?
+What if the benevolent dictator begins displaying values that are at odds with those of the wider community?
+What if they’re missing viewpoints that were obvious if only the governance committee was more than one person?
+Take python as an example.
+Originally set up as a “benevolent dictatorship for life”, the BDFL, Guide Van Rossum, <a class="reference external" href="https://www.mail-archive.com/python-committers&#64;python.org/msg05628.html">eventually abdicated and transferred power to the community in 2018</a>, citing burnout as the main reason.
+Benevolent dictatorships for life limit the sustainability of open source projects by tying them too closely to one person, and remove formal paths for intervention when something goes wrong.</p>
+<p>Relying on technology to be your governance is equally risky.
+Technology can be an incredible tool, but so long as it’s the only tool you have put in place for making governance decisions, it’s likely to be a potential problem.
+This is why it is important to start the process of governance selections with self-reflection, so that you are aware of all the requiremeents in the projects and prepared to implement ethical measures for them.</p>
+</section>
+<section id="conclusion">
+<span id="er-ethics-open-source-governance-conclusion"></span><h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h2>
+<p>By its nature, open source technology can deliver benefits to all societies.
+However, projects started with all the best of intentions can still evolve into something malicious through poor guidance and oversight.
+Such considerations should therefore be noted and addressed through the application of a formal governing structure throughout any such projects, especially in sensitive areas where conflicts are likely to arise.
+While the use of a governance structure doesn’t negate the possibility of bad things from happening, it does however provide a framework which allows us to put such actions into context.
+In this chapter, we have provided some ethical pointers for open source project communities to consider when constructing their governance models, to support the continual evolution of open source towards a more just and equitable ecosystem for all contributors and users.</p>
+</section>
+<section id="additional-resources">
+<span id="er-ethics-open-source-governance-resources"></span><h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://investinopen.org/research/good-community-governance/">Invest in Open Infrastructure - Resources on Good Community Governance Research + Literature Collection</a></p></li>
+<li><p><a class="reference external" href="https://communityrule.info/book/">Community Rules - Simple Templates for Great Communities</a></p></li>
+<li><p><a class="reference external" href="https://www.redhat.com/en/blog/understanding-open-source-governance-models">RedHat Blog - Understanding Open Source Governance Models</a></p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ethical-research"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation-and-background">Motivation and Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ethical-governance-starts-with-self-reflection">Ethical Governance Starts with Self-Reflection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ethical-governance-is-a-continuous-process">Ethical Governance is a Continuous Process</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ethics-need-governance-to-become-actionable">Ethics Need Governance to become Actionable</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#do-not-rely-on-technology-to-do-your-ethics-for-you">Do Not Rely on Technology to do Your Ethics for You</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-resources">Additional Resources</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dionysus
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  The Artist is the creator of beautiful things
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

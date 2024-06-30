@@ -1,0 +1,751 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Guidance on Peer Review for a Journal &#8212; Music</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/book-stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-167881009-1"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-167881009-1');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'communication/peer-review/peer-review-guidance';</script>
+    <script src="../../_static/script.js"></script>
+    <link rel="canonical" href="https://book.the-turing-way.org/communication/peer-review/peer-review-guidance.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content"><a href='https://www.gutenberg.org/files/174/174-h/174-h.htm'>Aesthetics vs. Morality</a></div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://static.dw.com/image/62054308_1004.webp" class="logo__image only-light" alt="Music - Home"/>
+    <script>document.write(`<img src="https://static.dw.com/image/62054308_1004.webp" class="logo__image only-dark" alt="Music - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Will
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../foreword/foreword.html">Foreword</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/navigate.html">Navigating the Handbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/emergent-strategy.html">Emergence as The Turing Way Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/embracing-digital-commons.html">Embracing the Principles of Digital Commons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/community.html">Community and Community Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/governance.html">Governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/cite.html">How to Cite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/faqs.html">Frequently Asked Questions</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../reproducible-research/reproducible-research.html">Guide for Reproducible Research</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/overview.html">Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-definitions.html">Definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-benefit.html">Added Advantages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-barriers.html">Barriers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/open.html">Open Research</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-data.html">Open Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-source.html">Open Source Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-hardware.html">Open Source Hardware</a></li>
+
+
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-access.html">Open Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-notebooks.html">Open Notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-scholarship.html">Open Scholarship</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/vcs.html">Version Control</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-workflow.html">Version Control Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-workflow-branches.html">Version Control and Branches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-general.html">The Git Version Control Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-in-research.html">Git for Research Projects</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git.html">Git Using the Command Line</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-commit.html">Git Commit Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-compare.html">Retrieving and Comparing Versions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-branches.html">Git Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-merge.html">Merging Branches in Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-interactive.html">Interactive, Visual Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-github.html">Git Commands to Work on GitHub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-summary.html">Summary Table of Git Commands</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-data.html">Version Control for Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-personal-stories.html">Personal Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/licensing.html">Licensing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-compatibility.html">License Compatibililty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ethical-source.html">Ethics-informed Licensing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-data.html">Data Licenses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-hardware.html">Hardware Licenses</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ml.html">Machine Learning Model Licenses</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ml-case-studies.html">Case Studies: Choosing an ML License</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-checklist.html">Checklist</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/rdm.html">Research Data Management</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-data.html">Research Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-find.html">Finding Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-dmp.html">Data Management Plan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-fair.html">The FAIR Principles and Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-personal.html">Personal data management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-storage.html">Data Storage and Organisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-spreadsheets.html">Data Organisation in Spreadsheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-metadata.html">Documentation and Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-methods.html">Methods and Protocols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-elns.html">Electronic Lab Notebooks (ELNs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-data-curation.html">Data Curation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-visualisation.html">Data Visualisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-repository.html">Data Repositories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-sharing.html">Sharing and Archiving Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-article.html">Data Article</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-checklist.html">Checklist</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-stories.html">Personal Impact Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-resources.html">Resources</a></li>
+
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/edit/main/book/website/communication/peer-review/peer-review-guidance.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/issues/new?title=Issue%20on%20page%20%2Fcommunication/peer-review/peer-review-guidance.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/communication/peer-review/peer-review-guidance.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Guidance on Peer Review for a Journal</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#before-you-accept-an-invitation-to-peer-review">Before you accept an invitation to peer review</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-a-review">Writing a review</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-organize-the-review-work">How to organize the review work</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="guidance-on-peer-review-for-a-journal">
+<span id="cm-pr-guidance"></span><h1>Guidance on Peer Review for a Journal<a class="headerlink" href="#guidance-on-peer-review-for-a-journal" title="Permalink to this heading">#</a></h1>
+<p>The text is inspired by this <a class="reference external" href="https://renebekkers.wordpress.com/2020/06/24/how-to-review-a-paper/">blog post</a> by <a class="reference external" href="https://research.vu.nl/en/persons/rene-bekkers">Rene Bekkers</a>, released under the CC BY 4.0 licence.
+There is no consensus among journals and editors on a set of minimum criteria that the peer review process should cover.
+The extensive set of criteria provided here are general considerations from the perspectives of openness and reproducibility.
+The bar is set pretty high: a review checking each of the criteria will take you at least three hours, but more likely between five and eight hours.</p>
+<section id="before-you-accept-an-invitation-to-peer-review">
+<span id="cm-pr-guidance-before"></span><h2>Before you accept an invitation to peer review<a class="headerlink" href="#before-you-accept-an-invitation-to-peer-review" title="Permalink to this heading">#</a></h2>
+<p>The following steps will help you make a decision whether to review the paper or not.
+They need to be taken fast.
+It is a good practice to let the editor know immediately if you are unable to review a paper, so the editor can start to look for someone else to review the paper.
+Suggesting other possible reviewers is very helpful.
+Your non-response means a delay for the authors and the editor.</p>
+<ol class="arabic simple">
+<li><p>Check what kind of journal this is.
+Have you heard of it before?
+Does it have a reputation in your discipline?
+Are you planning to submit your own work there?
+Is this journal an <a class="reference external" href="https://book.the-turing-way.org/reproducible-research/open/open-access.html">Open Access</a> journal?
+Beware of <a class="reference external" href="https://predatoryjournals.com/journals/">predatory journals</a>.</p></li>
+<li><p>Check if this paper is of interest to review and if you are the right person to review the paper.
+Reviewers do not need to be experts in all respects.
+The editor may ask you to focus on a specific aspect of the paper.
+Alternatively, you may qualify your review with an indication of where you focused your review, if you do not feel you have the necessary expertise to evaluate all aspects of the paper.
+It is a good practice to describe your disciplinary background and expertise in relation to the manuscript you are invited to review.
+If you do not have useful expertise to improve the paper, politely decline.
+If you do not have sufficient time to review the paper, politely decline.
+Recommending other potential reviewers when declining is helpful, but not necessary - a timely accept/decline response to the review request is more important.</p></li>
+<li><p>Check whether you know the author(s).
+If you do, you might describe how you know the author(s) and ask the editor whether it is appropriate for you to review the paper.
+If you have a conflict of interest, notify the editor and politely decline.</p></li>
+<li><p>Check whether the authors have made the data and code available - see also <a class="reference external" href="https://book.the-turing-way.org/reproducible-research/open/open-access.html">Open Access</a>.
+You can set a requirement for the author to make the data available for peer review or openly available before you accept an invitation to review their work.
+It needs to be taken into account that some data  would be illegal or dangerous to make available, such as datasets that contain identifying information that cannot be removed.
+In most cases, the authors can provide at least partial access to the data by excluding variables that contain personal information.
+If the paper does not provide a link to the data and the analysis script, you can ask the editor to ask the authors to provide the data and the code.</p></li>
+</ol>
+<p>You might get requests to review a paper that you have reviewed before, for a conference or another journal.
+In these cases, you can let the editor know and ask the editor whether she would like to see the previous review.
+For the editor it will be useful to know whether the current manuscript is the same as the version, or includes revisions.</p>
+</section>
+<section id="writing-a-review">
+<span id="cm-pr-guidance-writing"></span><h2>Writing a review<a class="headerlink" href="#writing-a-review" title="Permalink to this heading">#</a></h2>
+<section id="how-to-organize-the-review-work">
+<h3>How to organize the review work<a class="headerlink" href="#how-to-organize-the-review-work" title="Permalink to this heading">#</a></h3>
+<p>There is no established procedure, you need to find what works for you. The journal you are reviewing for may also provide guidance on how to write a review.
+If you are reviewing for the first time, this workflow might be useful.</p>
+<ol class="arabic simple">
+<li><p>It might be a good idea to read a paper twice.
+First, go over the paper superficially and quickly. This gets you a sense of where the authors are going.</p></li>
+<li><p>After a quick glance at the paper, you can determine whether you think the paper has the potential to be published, perhaps after revisions.
+If you think the paper is beyond repair, explain this to the editor.</p></li>
+<li><p>If the paper is good enough to be revised and resubmitted, you can start providing more detailed comments.</p></li>
+<li><p>The second time you go over the paper, do a very close reading.
+Some of the information may be in the supplementary information provided with the paper - read them carefully as well.</p></li>
+</ol>
+<p><strong>The tone of the review</strong>
+There is a ‘golden rule’ for people writing a review: treat others as you would like to be treated.
+Write the review report that you would have liked to receive if you had been the author.
+The following principles might help you:</p>
+<ol class="arabic simple">
+<li><p>Be honest but constructive.
+You are not at war.
+There is no need to burn a paper to the ground.</p></li>
+<li><p>Avoid addressing the authors personally.
+Say: “the paper could benefit from…” instead of “the authors need”.</p></li>
+<li><p>Stay close to the facts.
+Do not speculate about reasons why the authors have made certain choices beyond the arguments stated in the paper.</p></li>
+<li><p>Take a developmental approach.
+Any paper will contain flaws and imperfections.
+Your job is to improve science by identifying problems and suggesting ways to repair them.
+Think with the authors about ways they can improve the paper in such a way that it benefits collective scholarship.</p></li>
+<li><p>Try to see beyond bad writing style and mistakes in spelling.
+Also be mindful of disciplinary and cultural differences between the authors and yourself.</p></li>
+</ol>
+<p><strong>The substance of the advice</strong></p>
+<ol class="arabic simple">
+<li><p>It is a good principle to begin the review report by describing the way you reviewed the paper.
+If you searched for literature, checked the data and verified the results, ran additional analyses, state this.
+It will allow the editor to adjudicate the review.</p></li>
+<li><p>Then give a brief overview of the paper.
+Include a two- or three-sentence summary with your interpretation of the hypothesis, main results and conclusions.
+This summary provides the author an indication of the clarity of their paper.</p></li>
+<li><p>If the invitation asks you to provide a general recommendation, state it early in the review.
+The recommendation is the first thing the editor wants to know.
+Typically, you are invited to recommend ‘reject’, ‘revise &amp; resubmit’ – with major or minor revisions, or ‘accept’.</p></li>
+</ol>
+<ul class="simple">
+<li><p>Major revisions are needed when the conclusions are jeopardized by concerns or the usefullness of the data is limited.
+Examples are problems with the applied methods, analyses, or the reasoning.
+Reviewers should indicate the seriousness of the major concern and how it could be addressed.
+If the concern cannot be addressed it may be better to ‘reject’ the work.
+Only suggest additional analyses or testing only when the conclusions of the study are otherwise undermined - otherwise they can be addressed in a future paper.</p></li>
+<li><p>Minor revisions are needed to improve the clarity of the paper.
+Minor revisions can include additional citations, addition of details regarding the method, change in title or abstract to reflect the paper content, whether figures are clear, necessairy and in correspondence with the text and any presentation issues (spelling errors, wording).</p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>Use ‘reject’ only if absolutely necessary.
+Most journal editors make use of desk-rejection if the paper seems a poor fit; if the editor sent the paper out for review, she probably thinks it has the potential to be published.
+Start from the assumption that the authors have invested a great deal of time in the paper and that they want to improve it.</p></li>
+<li><p>List the strengths and the weaknesses of the paper.
+To ease the message you can use the sandwich principle: start with the strengths, then discuss the weaknesses, and conclude with an encouragement.</p></li>
+<li><p>Try to give actionable advice.
+For the weaknesses in the paper, suggest ways to repair them.
+Constructive criticism does not have to be in the form of a specific solution.
+It can be much more useful to be specific about the problem and to let the authors identify a solution, than it is to provide the fix for them.
+It is convenient for both the editor and the authors to number your suggestions.
+Distinguish major issues, such as not discussing alternative explanations, from minor issues such as missing references and typos.
+There could be points that the authors are underselling.
+In that case, you could identify them as strengths that the authors can emphasize more strongly.
+It is handy to refer to issues with direct quotes and page numbers or line numbers.</p></li>
+<li><p>Traditionally, the review process is designed to be anonymous. However, some reviewers sign their reviews.
+A non-anonymous review can be seen as an accountability device: by exposing who they are to the authors of the paper, the reviewers set higher standards for themselves. This needs to be done carefully: some editors do not appreciate signed reviews.
+There are voices that express concerns for a graduate student or an early career researcher facing retribution for being critical of a more senior researcher.
+There is also a process called open peer review; in this case, the review is open for everyone viewing the paper.
+The peer review might blend these features; for example, one might be able to see the review text but not the name of the reviewer who did it, or the name of the reviewer but not the text itself.
+The design of the peer review process and its transparency varies from journal to journal.
+Generally there is a way to communicate just with the editor, for example, via confidential remarks.
+This communication is not provided to the authors, so you can be candid here about your limitations and concerns regarding the submitted paper.</p></li>
+</ol>
+<p><strong>Second round of reviewing process</strong>
+If the authors have revised their paper, check if your suggestions have been implemented or whether sufficient arguments have been provided to not do so.
+It is a good principle to avoid making new demands for the second round that you have not made before.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./communication/peer-review"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#before-you-accept-an-invitation-to-peer-review">Before you accept an invitation to peer review</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-a-review">Writing a review</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-organize-the-review-work">How to organize the review work</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dionysus
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  The Artist is the creator of beautiful things
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,900 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Online Collaboration Cafe &#8212; Music</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/book-stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-167881009-1"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-167881009-1');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'community-handbook/coworking/coworking-collabcafe';</script>
+    <script src="../../_static/script.js"></script>
+    <link rel="canonical" href="https://book.the-turing-way.org/community-handbook/coworking/coworking-collabcafe.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content"><a href='https://www.gutenberg.org/files/174/174-h/174-h.htm'>Aesthetics vs. Morality</a></div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://static.dw.com/image/62054308_1004.webp" class="logo__image only-light" alt="Music - Home"/>
+    <script>document.write(`<img src="https://static.dw.com/image/62054308_1004.webp" class="logo__image only-dark" alt="Music - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Will
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../foreword/foreword.html">Foreword</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/navigate.html">Navigating the Handbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/emergent-strategy.html">Emergence as The Turing Way Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/embracing-digital-commons.html">Embracing the Principles of Digital Commons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/community.html">Community and Community Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/governance.html">Governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/cite.html">How to Cite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/faqs.html">Frequently Asked Questions</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../reproducible-research/reproducible-research.html">Guide for Reproducible Research</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/overview.html">Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-definitions.html">Definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-benefit.html">Added Advantages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-barriers.html">Barriers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/open.html">Open Research</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-data.html">Open Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-source.html">Open Source Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-hardware.html">Open Source Hardware</a></li>
+
+
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-access.html">Open Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-notebooks.html">Open Notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-scholarship.html">Open Scholarship</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/vcs.html">Version Control</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-workflow.html">Version Control Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-workflow-branches.html">Version Control and Branches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-general.html">The Git Version Control Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-in-research.html">Git for Research Projects</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git.html">Git Using the Command Line</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-commit.html">Git Commit Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-compare.html">Retrieving and Comparing Versions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-branches.html">Git Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-merge.html">Merging Branches in Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-interactive.html">Interactive, Visual Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-github.html">Git Commands to Work on GitHub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-summary.html">Summary Table of Git Commands</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-data.html">Version Control for Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-personal-stories.html">Personal Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/licensing.html">Licensing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-compatibility.html">License Compatibililty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ethical-source.html">Ethics-informed Licensing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-data.html">Data Licenses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-hardware.html">Hardware Licenses</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ml.html">Machine Learning Model Licenses</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ml-case-studies.html">Case Studies: Choosing an ML License</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-checklist.html">Checklist</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/rdm.html">Research Data Management</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-data.html">Research Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-find.html">Finding Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-dmp.html">Data Management Plan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-fair.html">The FAIR Principles and Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-personal.html">Personal data management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-storage.html">Data Storage and Organisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-spreadsheets.html">Data Organisation in Spreadsheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-metadata.html">Documentation and Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-methods.html">Methods and Protocols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-elns.html">Electronic Lab Notebooks (ELNs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-data-curation.html">Data Curation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-visualisation.html">Data Visualisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-repository.html">Data Repositories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-sharing.html">Sharing and Archiving Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-article.html">Data Article</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-checklist.html">Checklist</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-stories.html">Personal Impact Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-resources.html">Resources</a></li>
+
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/edit/main/book/website/community-handbook/coworking/coworking-collabcafe.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/issues/new?title=Issue%20on%20page%20%2Fcommunity-handbook/coworking/coworking-collabcafe.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/community-handbook/coworking/coworking-collabcafe.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Online Collaboration Cafe</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attending-an-online-collaboration-cafe">Attending an online Collaboration Cafe</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inviting-people-to-an-online-collaboration-cafe">Inviting people to an online Collaboration Cafe</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resources-used-for-the-call">Resources used for the call</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-of-the-call">Format of the call</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schedule">Schedule</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chairing-an-online-collaboration-cafe">Chairing an online Collaboration Cafe</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#before-the-call">Before the Call</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#during-the-call">During the Call</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#after-the-call">After the Call</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#beginning">Beginning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#breaks">Breaks</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pomodoro-sessions">Pomodoro sessions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#if-joining-this-call-later">If joining this call later</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#recording-this-call">Recording this call</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sign-up-and-icebreaker">Sign-up and icebreaker</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conversation-starters">Conversation starters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#good-first-contributions">Good first contributions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#breakout-rooms">Breakout rooms</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="online-collaboration-cafe">
+<span id="ch-coworking-collabcafe"></span><h1>Online Collaboration Cafe<a class="headerlink" href="#online-collaboration-cafe" title="Permalink to this heading">#</a></h1>
+<figure class="align-default" id="collaboration-cafe">
+<a class="reference internal image-reference" href="figures/collaboration-cafe.*"><img alt="Cartoon-like sketch in a green, teal, and orange colorscheme, with three main elements. First, in the center of the image is a large maple leaf, where it's interior has been sectioned into four panels. Each panel has an individual contributing to a collaboration cafe. All individuals are facing each other, by looking diagonally towards the center of where all four panels join. The individuals are (in the top left) holding a physical copy of a document, (in the bottom left) holding a mug, (in the bottom right) holding their hand up and raising their index finger, gesturing to bring something up. The maple leaf also has a green banner below reading &quot;Collaboration Cafe&quot;. Secondly, there is an oval element, connected, via a continuous line, to the top right portion of the maple leaf. In this oval element, 5 individuals are sitting on a leaf-shaped table, in discussion. Lastly, there is a second oval element, connected via a continuous line, to the top left portion of the maple leaf. This oval has someone overlooking their laptop, which has a video call on the screen, with one person in the video call being enlarged and two others also being part of the call" src="figures/collaboration-cafe.*" style="height: 500px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>The Turing Way</em> project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: <a class="reference external" href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a>.</span><a class="headerlink" href="#collaboration-cafe" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p><em>The Turing Way</em> Collaboration Cafes (or ‘Cafés’ with an accent) are virtual co-working spaces that are held fortnightly on the first and third Wednesdays of each month for 2 hours.
+The schedule will be updated periodically on our <a class="reference external" href="https://calendar.google.com/calendar?cid=dGhldHVyaW5nd2F5QGdtYWlsLmNvbQ">Community Calendar</a> as per the community requirement.</p>
+<p>We host these calls online using <a class="reference external" href="https://www.zoom.us/">Zoom</a> where we make use of the <a class="reference internal" href="#breakout-rooms">breakout rooms</a> feature to allow small groups to use the 2 hours as best fits them.
+One or two members from the core team are always available on the call to support anyone wanting to learn more about collaborating on GitHub, getting a virtual tour of our GitHub repository or the book, and help you to make your first pull request (PR).</p>
+<section id="attending-an-online-collaboration-cafe">
+<h2>Attending an online Collaboration Cafe<a class="headerlink" href="#attending-an-online-collaboration-cafe" title="Permalink to this heading">#</a></h2>
+<p>The schedule for the collaboration cafe can be viewed from the <a class="reference external" href="https://calendar.google.com/calendar/embed?src=theturingway%40gmail.com&amp;amp;ctz=Europe%2FLondon">community calendar</a>.
+We also announce calls in our <a class="reference external" href="https://buttondown.email/turingway/">monthly newsletters</a>, send a reminder on the <a class="reference external" href="https://tinyurl.com/jointuringwayslack">Slack channel</a> and on <a class="reference external" href="https://twitter.com/turingway">X (formerly Twitter)</a> and <a class="reference external" href="https://fosstodon.org/&#64;turingway">Mastodon</a>.
+Our <a class="reference external" href="https://www.linkedin.com/company/the-turing-way/">LinkedIn account</a> can also be used to announce calls.</p>
+<p>Though scheduled for 2 hours, we understand that for many interested participants it might be impossible to commit to the entire 2 hours on one or multiple occasions, therefore, you are welcome to join for as long as your schedule allows.</p>
+<p>If the current schedule of the online Collaboration Cafe is not suitable for your time zone, you are welcome to host a separate collaboration cafe for your community/time zone.
+Please open a new issue (see <a class="reference external" href="https://github.com/the-turing-way/the-turing-way/issues/684">this example</a>) or reach out to <em>The Turing Way</em> team members for details.
+Continue reading for information on hosting these calls.</p>
+<section id="inviting-people-to-an-online-collaboration-cafe">
+<h3>Inviting people to an online Collaboration Cafe<a class="headerlink" href="#inviting-people-to-an-online-collaboration-cafe" title="Permalink to this heading">#</a></h3>
+<p>New attendees are welcome to join the Collaboration Cafe, and it is a space where many may encounter <em>The Turing Way</em> project for the first time.
+Existing <em>The Turing Way</em> community members may invite their colleagues to join them in a breakout session, called Pomodoro session in <em>The Turing Way</em> community, to discuss a topic of shared interest or co-work together.</p>
+<p>It is important that any one joining a Collaboration Cafe has an interest in <em>The Turing Way</em> and learning with and feeding back into the community.
+If a meeting is on a topic or for a purpose completely separate to “reproducible, ethical and collaborative data science”, it may not be the best fit for a Collaboration Cafe.</p>
+<p>When inviting new people, please forward the Zoom call for the meeting and the shared document with introduction text like one of the following:</p>
+<ul class="simple">
+<li><p>Collaboration Cafes are The Turing Way’s regular online collaboration and coworking calls where community members work on contributions to the project, discuss shared interests, or learn about how to get involved. You can learn more <a class="reference external" href="https://book.the-turing-way.org/community-handbook/coworking/coworking-collabcafe.html">here</a>. All of our calls adhere to our code of conduct. Please take a moment to read this <a class="reference external" href="https://github.com/alan-turing-institute/the-turing-way/blob/main/CODE_OF_CONDUCT.md">here</a>.</p></li>
+<li><p>I look forward to meeting at The Turing Way Collaboration Cafe, which will be a chance for us to discuss, co-work, and share and get feedback on our work with The Turing Way community. You can learn more the calls <a class="reference external" href="https://book.the-turing-way.org/community-handbook/coworking/coworking-collabcafe.html">here</a>. All of our calls adhere to our <a class="reference external" href="https://github.com/alan-turing-institute/the-turing-way/blob/main/CODE_OF_CONDUCT.md">code of conduct</a>.</p></li>
+</ul>
+</section>
+<section id="resources-used-for-the-call">
+<h3>Resources used for the call<a class="headerlink" href="#resources-used-for-the-call" title="Permalink to this heading">#</a></h3>
+<p>Here are the resources we use for these calls:</p>
+<ol class="arabic simple">
+<li><p>Shared notes by <a class="reference external" href="https://framapad.org/">Framapad</a>: You can access these notes online at <a class="reference external" href="https://annuel2.framapad.org/p/ttw-collaboration-cafe">annuel2.framapad.org/p/ttw-collaboration-cafe</a> and can take notes together with others on the call.</p></li>
+<li><p>Online call by <a class="reference external" href="https://www.zoom.us/">Zoom</a>: The Zoom link is provided in the Framapad before the call, and members can click to join the call by opening zoom window on the web or by using the Zoom app that should be installed locally (<a class="reference external" href="https://zoom.us/download">available for free</a>).</p></li>
+<li><p>An online Pomodoro clock on <a class="reference external" href="https://cuckoo.team/collabcafe">Cuckoo.team</a>: During the call, the clock is set for Pomodoro work intervals that can be live-tracked by everyone through their browsers.</p></li>
+<li><p>Video recordings from some of the earlier calls are available on <a class="reference external" href="https://www.youtube.com/channel/UCPDxZv5BMzAw0mPobCbMNuA">our YouTube channel</a>.</p></li>
+</ol>
+<p>We coordinate our tasks on the shared Framapad and/or <em>The Turing Way</em> GitHub repository, where we can work collaboratively or independently while working on an older GitHub issues/PRs, creating new issues/PRs, taking notes as comments on the GitHub repository or working on a branch locally.</p>
+</section>
+</section>
+<section id="format-of-the-call">
+<h2>Format of the call<a class="headerlink" href="#format-of-the-call" title="Permalink to this heading">#</a></h2>
+<p>We have a template for the <a class="reference internal" href="../templates/template-coworking-collabcafe.html#ch-template-coworking-collabcafe"><span class="std std-ref">Collaboration Cafes</span></a>, which is updated on the shared notes for each call.</p>
+<p><strong>Bonus</strong></p>
+<p>You can watch this video to see Kirstie and Malvika plan the structure and format of Collaboration Café.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XUw5kpypeo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<section id="schedule">
+<h3>Schedule<a class="headerlink" href="#schedule" title="Permalink to this heading">#</a></h3>
+<p>We’ll run the following schedule during each Collaboration Cafe:</p>
+<div class="pst-scrollable-table-container"><table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Duration</p></th>
+<th class="head"><p>Activity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Start</p></td>
+<td><p>👋 Welcome, code of conduct review</p></td>
+</tr>
+<tr class="row-odd"><td><p>10 mins</p></td>
+<td><p>Introductions and personal goal setting</p></td>
+</tr>
+<tr class="row-even"><td><p>20 mins</p></td>
+<td><p>🍅 1st Pomodoro session</p></td>
+</tr>
+<tr class="row-odd"><td><p>5 mins</p></td>
+<td><p>☕️ Break</p></td>
+</tr>
+<tr class="row-even"><td><p>20 mins</p></td>
+<td><p>🍅 2nd Pomodoro session</p></td>
+</tr>
+<tr class="row-odd"><td><p>5 mins</p></td>
+<td><p>☕️ Break</p></td>
+</tr>
+<tr class="row-even"><td><p>20 mins</p></td>
+<td><p>🍅 3rd Pomodoro session</p></td>
+</tr>
+<tr class="row-odd"><td><p>5 mins</p></td>
+<td><p>☕️ Break</p></td>
+</tr>
+<tr class="row-even"><td><p>30 mins</p></td>
+<td><p>Open discussion: celebrations, reflections and future directions</p></td>
+</tr>
+<tr class="row-odd"><td><p>5 mins</p></td>
+<td><p>👋 Close</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="chairing-an-online-collaboration-cafe">
+<h3>Chairing an online Collaboration Cafe<a class="headerlink" href="#chairing-an-online-collaboration-cafe" title="Permalink to this heading">#</a></h3>
+<section id="before-the-call">
+<h4>Before the Call<a class="headerlink" href="#before-the-call" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Facilitators of the call, update the shared document (<a class="reference external" href="https://annuel2.framapad.org/p/ttw-collaboration-cafe">Framapad</a>) before the event using the following steps:</p>
+<ul>
+<li><p>Update the date for the upcoming call</p></li>
+<li><p>Move the notes from the previous call below the working area (that will be archived in this Notion page periodically)</p></li>
+<li><p>Update an icebreaker question</p></li>
+<li><p>Share the notes on Slack and on X announcing the event</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Want to see how we run these calls?</strong></p>
+<p>We have posted a few videos from our Collaboration Cafés on YouTube.
+Watch the video to see how Kirstie hosted the calls when it was first launched.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/I0z7OEbBzes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section id="during-the-call">
+<h4>During the Call<a class="headerlink" href="#during-the-call" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Use the notes during the call to share information as you chair the call</p></li>
+<li><p>Make sure that you share the Code of Conduct link and use the shared Cuckoo (or other web-based clocks)</p></li>
+<li><p>Create breakout rooms for people before starting the Pomodoro</p></li>
+<li><p>As the Pomodoro ends, close the rooms, ask for any feedback, and call for a 5 minutes break</p></li>
+<li><p>Continue the repeated session for 2-3 Pomodoros, leaving the last 15-30 minutes for discussion on what people worked on</p></li>
+<li><p>Close the call thanking everyone, and archive the notes for the next call</p></li>
+</ul>
+</section>
+<section id="after-the-call">
+<h4>After the Call<a class="headerlink" href="#after-the-call" title="Permalink to this heading">#</a></h4>
+<p>Please share any feedback from this call with the Community Manager of <em>The Turing Way</em>, specifically, if you have any feedback, concern or ideas for future calls.
+You are encouraged to create a Pull Request to suggest improvements to this chapter that can help future attendees and chairs of the Collaboration Café.</p>
+</section>
+<section id="beginning">
+<h4>Beginning<a class="headerlink" href="#beginning" title="Permalink to this heading">#</a></h4>
+<p>The call begins with the team members welcoming the participants, sharing the Code of Conduct, reminding how to participate in the call, and setting the stage for quick introductions by everyone.</p>
+</section>
+<section id="breaks">
+<h4>Breaks<a class="headerlink" href="#breaks" title="Permalink to this heading">#</a></h4>
+<p>We will take short breaks after each Pomodoro to discuss what we are working on, ask questions that might help you in your next Pomodoro session, share any errors or progress, and celebrate each others successes.</p>
+<p>We will use the last 30 minutes for themed discussion, collaborative troubleshooting, or idea exchange for the project and community.</p>
+<p>The welcome, introductions, breaks, and the open discussion will all happen in the main room.</p>
+</section>
+<section id="pomodoro-sessions">
+<h4>Pomodoro sessions<a class="headerlink" href="#pomodoro-sessions" title="Permalink to this heading">#</a></h4>
+<p>Pomodoro sessions can happen either in the main Zoom room in silence or in <a class="reference internal" href="#breakout-rooms">breakout rooms</a>.
+We won’t record the Pomodoro parts of the Collaboration Cafe, nor conversations in the breakout rooms.
+You don’t need to know in advance what you’re going to do in those Pomodoro sessions!
+There will always be someone who can help you develop a goal, or allocate a task that you can do in a couple of rounds of 20 minutes.</p>
+</section>
+<section id="if-joining-this-call-later">
+<h4>If joining this call later<a class="headerlink" href="#if-joining-this-call-later" title="Permalink to this heading">#</a></h4>
+<p>During a typical Pomodoro session, attendees are sent to breakout rooms based on the topic they are working on.
+If you join later, you will be able to check the remaining time in the ongoing Pomodoro by opening the shared clock in your browser (link should be provided in the shared notes).
+You can use that Pomodoro session to sign up, read notes from other attendees in the shared document, and explore what you would like to work on during the next Pomodoro session.</p>
+<p>If you know in advance what time you will join the coworking call, you can let the host know before the call or leave a note in the shared document.</p>
+</section>
+<section id="recording-this-call">
+<h4>Recording this call<a class="headerlink" href="#recording-this-call" title="Permalink to this heading">#</a></h4>
+<p>We may record the call for the part that involves open discussion so that others who can’t attend the call can learn from the conversations we have during the Collaboration Cafes.
+For this part, you do not have to speak or have your video on if you prefer not to be in the video.
+The videos will be uploaded to <em>The Turing Way</em> YouTube channel: <a class="reference external" href="https://www.youtube.com/channel/UCPDxZv5BMzAw0mPobCbMNuA">https://www.youtube.com/channel/UCPDxZv5BMzAw0mPobCbMNuA</a>.</p>
+</section>
+</section>
+<section id="sign-up-and-icebreaker">
+<h3>Sign-up and icebreaker<a class="headerlink" href="#sign-up-and-icebreaker" title="Permalink to this heading">#</a></h3>
+<p>If you’re interested in joining the next Collaboration Cafe, please let the organisers know by adding your name to the <strong>Sign Up</strong> section of the HackMD notes page.
+Adding your name is helpful for the organisers so they can prepare for the call.
+But don’t worry if you don’t sign up in advance.
+It’s ok to join at any time for as long as you’d like.</p>
+<p>In addition to your names, we will encourage everyone to add a short response to an icebreaker question, that will help us all learn something personal about all the different people on the call.</p>
+<p>Here are a few example questions (so you know what to expect):</p>
+<ul class="simple">
+<li><p>what was your biggest achievement this week?</p></li>
+<li><p>when was the last time you saw a rainbow?</p></li>
+<li><p>what are you most excited about this year?</p></li>
+<li><p>what is your favorite flavor in cake/ice-cream?</p></li>
+</ul>
+<p><em>Do you have another interesting question to ask others?</em>
+<em><a class="reference external" href="https://github.com/the-turing-way/the-turing-way#get-in-touch">Get in touch</a> and let us know!</em>
+<em>We love creative suggestions!</em></p>
+<p>Here’s an example from the second Collaboration Cafe in September 2019:</p>
+<blockquote>
+<div><p><em>Name + biggest achievement from this week + emoji that best explain your day</em>
+<em>(Remember that this is a public document. You can use a pseudonym if you’d prefer.)</em></p>
+<ul class="simple">
+<li><p>Kirstie Whitaker + got a structure written out for an article that had been super hard to get started on! + 🤦‍♀️ (because I got these times mixed up - whoops!)</p></li>
+<li><p>Malvika Sharan + Coming back from holiday, ready for exciting work :D + :grimacing:</p></li>
+</ul>
+</div></blockquote>
+<p>As you can see, there’s a reminder in the notes that they are in a public document.
+It’s totally fine for you to add as much or as little information as you feel comfortable sharing.</p>
+</section>
+<section id="conversation-starters">
+<h3>Conversation starters<a class="headerlink" href="#conversation-starters" title="Permalink to this heading">#</a></h3>
+<p>In the <strong>Conversation Starters</strong> section of the HackMD notes, we encourage everyone to advertise their events or give an update from their community.</p>
+<p>These don’t have to be Turing Way “branded”!
+<strong>We want to know about all the cool things you’re working on.</strong> ✨</p>
+</section>
+<section id="good-first-contributions">
+<h3>Good first contributions<a class="headerlink" href="#good-first-contributions" title="Permalink to this heading">#</a></h3>
+<p>We want the Collaboration Cafes to be a place that welcomes new and old members to <em>The Turing Way</em> community.</p>
+<p>In brainstorming these events, we imagined that some people may want to add new material that they’ve created before to the book, others may want to finish a contribution that they’ve started, and still others might want to learn new skills including <em>how</em> to contribute to <em>The Turing Way</em>.
+These are <strong>all</strong> great reasons to join us!</p>
+<p>We’ll always have someone on the team available to help you brainstorm your first contribution, and answer any questions about how to incorporate your work.</p>
+<p>Good first contributions might include:</p>
+<ul class="simple">
+<li><p>Finding a typo in the book and/or repository and fixing it.</p></li>
+<li><p>Looking for duplicated information in the book and opening an issue to discuss how it can be combined.</p></li>
+<li><p>Finding an old issue or PR and try to summarize the discussion so it is easy to decide on the next step.</p></li>
+<li><p>Adding your personal experience of reproducible research in the always open google form: <a class="reference external" href="https://goo.gl/forms/akFqZEIy2kxAjfZW2">https://goo.gl/forms/akFqZEIy2kxAjfZW2</a>.</p></li>
+</ul>
+</section>
+<section id="breakout-rooms">
+<span id="ch-coworking-collabcafe-breakout"></span><h3>Breakout rooms<a class="headerlink" href="#breakout-rooms" title="Permalink to this heading">#</a></h3>
+<p>Zoom allows groups of collaborators to chat in one “main room” altogether, or to split up - within the same call - and talk with each other in smaller <a class="reference external" href="https://support.zoom.us/hc/en-us/articles/206476093-Getting-Started-with-Breakout-Rooms">“breakout rooms”</a>.</p>
+<p>During the online Collaboration Cafe sessions, we’ll use the breakout rooms to allow people to talk about multiple different topics in parallel during the Pomodoro sessions.</p>
+<p>You’ll see a breakout section in the shared notes:</p>
+<blockquote>
+<div><p><strong>Breakout-rooms-Topic-proposals</strong></p>
+<p><em>If you have an idea for a topic you’d like to discuss in a breakout room, please add it below and put your name next to it.</em>
+<em>If you like one of the topics that are already suggested, please add your name next to that one.</em>
+<em>Teamwork makes the dream work.</em>
+<em>For more information about breakout rooms see <a class="reference external" href="https://book.the-turing-way.org/community-handbook/coworking/coworking-collabcafe.html#breakout-rooms">the description on The Turing Way</a>.</em></p>
+</div></blockquote>
+<p>For each session, you can propose a conversation to have in a breakout room or add your name to join a suggestion that is already on the list.</p>
+<p>You don’t have to add your name in advance (although you’re welcome to) and you don’t have to stay in the breakout room you’ve put your name next to.</p>
+<p>Breakout room conversation topics might include:</p>
+<ul class="simple">
+<li><p>GitHub new user or refresher questions (and answers)</p></li>
+<li><p>Finding a good first issue</p></li>
+<li><p>Reading and giving feedback on a chapter with the original author</p></li>
+<li><p>Reading and giving feedback on a chapter with a new reader</p></li>
+<li><p>Brainstorming <em>where</em> your topics could best fit into <em>The Turing Way</em></p></li>
+<li><p>Bug squashing - removing barriers (technical and otherwise)</p></li>
+</ul>
+<p>The person chairing the call will put you into the specific breakout rooms for the Pomodoro sessions and then bring you back into the main room for the 5-minute breaks and the broader conversation at the end of the Collaboration Cafe.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./community-handbook/coworking"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attending-an-online-collaboration-cafe">Attending an online Collaboration Cafe</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inviting-people-to-an-online-collaboration-cafe">Inviting people to an online Collaboration Cafe</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resources-used-for-the-call">Resources used for the call</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-of-the-call">Format of the call</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schedule">Schedule</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chairing-an-online-collaboration-cafe">Chairing an online Collaboration Cafe</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#before-the-call">Before the Call</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#during-the-call">During the Call</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#after-the-call">After the Call</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#beginning">Beginning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#breaks">Breaks</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pomodoro-sessions">Pomodoro sessions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#if-joining-this-call-later">If joining this call later</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#recording-this-call">Recording this call</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sign-up-and-icebreaker">Sign-up and icebreaker</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conversation-starters">Conversation starters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#good-first-contributions">Good first contributions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#breakout-rooms">Breakout rooms</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dionysus
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  The Artist is the creator of beautiful things
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
