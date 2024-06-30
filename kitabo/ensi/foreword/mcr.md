@@ -1,0 +1,9 @@
+- Melody
+   - Given, sacred
+- Chords
+   - [Reharm](https://www.youtube.com/watch?v=XHxdrZ5fF2A) 
+- Rhythm
+   - Rerhytmatize
+      - Usually as [Prelude](https://www.youtube.com/watch?v=ud-YSDFTboQ)
+         - [Speak to my heart](https://www.youtube.com/watch?v=YDFl9goQD_c)
+         - [Street Thing](https://www.youtube.com/watch?v=uii0nGTVLsI)  

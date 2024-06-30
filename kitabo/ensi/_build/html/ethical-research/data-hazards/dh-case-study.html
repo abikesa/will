@@ -1,0 +1,957 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Case Study: Data Ethics and Reproducibility Symposium and Data Hazards Workshop &#8212; Music</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/book-stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-167881009-1"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-167881009-1');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ethical-research/data-hazards/dh-case-study';</script>
+    <script src="../../_static/script.js"></script>
+    <link rel="canonical" href="https://book.the-turing-way.org/ethical-research/data-hazards/dh-case-study.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content"><a href='https://www.gutenberg.org/files/174/174-h/174-h.htm'>Aesthetics vs. Morality</a></div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://static.dw.com/image/62054308_1004.webp" class="logo__image only-light" alt="Music - Home"/>
+    <script>document.write(`<img src="https://static.dw.com/image/62054308_1004.webp" class="logo__image only-dark" alt="Music - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Continuous 1, 2, 3
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../foreword/foreword.html">Foreword</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/navigate.html">Navigating the Handbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/emergent-strategy.html">Emergence as The Turing Way Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/embracing-digital-commons.html">Embracing the Principles of Digital Commons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/community.html">Community and Community Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/governance.html">Governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/cite.html">How to Cite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/faqs.html">Frequently Asked Questions</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../reproducible-research/reproducible-research.html">Guide for Reproducible Research</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/overview.html">Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-definitions.html">Definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-benefit.html">Added Advantages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-barriers.html">Barriers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/open.html">Open Research</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-data.html">Open Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-source.html">Open Source Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-hardware.html">Open Source Hardware</a></li>
+
+
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-access.html">Open Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-notebooks.html">Open Notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-scholarship.html">Open Scholarship</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/vcs.html">Version Control</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-workflow.html">Version Control Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-workflow-branches.html">Version Control and Branches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-general.html">The Git Version Control Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-in-research.html">Git for Research Projects</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git.html">Git Using the Command Line</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-commit.html">Git Commit Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-compare.html">Retrieving and Comparing Versions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-branches.html">Git Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-merge.html">Merging Branches in Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-interactive.html">Interactive, Visual Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-github.html">Git Commands to Work on GitHub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-summary.html">Summary Table of Git Commands</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-data.html">Version Control for Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-personal-stories.html">Personal Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/licensing.html">Licensing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-compatibility.html">License Compatibililty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ethical-source.html">Ethics-informed Licensing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-data.html">Data Licenses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-hardware.html">Hardware Licenses</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ml.html">Machine Learning Model Licenses</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ml-case-studies.html">Case Studies: Choosing an ML License</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-checklist.html">Checklist</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/rdm.html">Research Data Management</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-data.html">Research Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-find.html">Finding Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-dmp.html">Data Management Plan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-fair.html">The FAIR Principles and Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-personal.html">Personal data management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-storage.html">Data Storage and Organisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-spreadsheets.html">Data Organisation in Spreadsheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-metadata.html">Documentation and Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-methods.html">Methods and Protocols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-elns.html">Electronic Lab Notebooks (ELNs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-data-curation.html">Data Curation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-visualisation.html">Data Visualisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-repository.html">Data Repositories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-sharing.html">Sharing and Archiving Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-article.html">Data Article</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-checklist.html">Checklist</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-stories.html">Personal Impact Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-resources.html">Resources</a></li>
+
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/edit/main/book/website/ethical-research/data-hazards/dh-case-study.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/issues/new?title=Issue%20on%20page%20%2Fethical-research/data-hazards/dh-case-study.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/ethical-research/data-hazards/dh-case-study.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Case Study: Data Ethics and Reproducibility Symposium and Data Hazards Workshop</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#der-symposium-goals">DER Symposium Goals</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organising-the-event">Organising the Event</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-an-agenda">Creating an Agenda:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advertising-the-event">Advertising the Event</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#collaboration">Collaboration:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#catering">Catering</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hosting-the-event">Hosting the Event</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#starting-the-event">Starting the Event</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hybrid-event-tips">Hybrid Event Tips</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accessibility">Accessibility</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hosting-a-workshop-data-hazards">Hosting a Workshop: Data Hazards</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-event">Post Event</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback-forms">Feedback Forms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-repository">GitHub Repository</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">Challenges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflections">Reflections</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="case-study-data-ethics-and-reproducibility-symposium-and-data-hazards-workshop">
+<span id="er-datahazardscasestudy"></span><h1>Case Study: Data Ethics and Reproducibility Symposium and Data Hazards Workshop<a class="headerlink" href="#case-study-data-ethics-and-reproducibility-symposium-and-data-hazards-workshop" title="Permalink to this heading">#</a></h1>
+<p>We (the organisers: Ceilidh Welsh and Susana Roman Garcia) wanted to create an event that revolved around the Data Hazards framework.
+The event focused on showcasing how different people think about embedding ethics into the work that they do.
+As PhD students, we both felt the need to connect our interest in creating more ethical and reproducible work with our project’s scientific questions.
+This passion for working more ethically brought us together, and we sought to see how other people are embedding ethics into their work.
+We hosted talks from PhD students who have been striving to make their work reproducible, how university lecturers might think of implementing Data Hazards into their material, and more (this is available in this <a class="reference internal" href="#er-datahazardscasestudy-postevent-githubrepo"><span class="std std-ref">GitHub Repository</span></a>).
+We were able to connect with others, share knowledge and learn new skills throughout the process.
+In this chapter, we would like to share with you our experiences, including some of the challenges we faced, and provide tips for people hosting events in the future.</p>
+<section id="overview">
+<span id="er-datahazardscasestudy-overview"></span><h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
+<p>The Data Ethics and Reproducibility (DER) Symposium was a one-day event held at the Alan Turing Institute on March 10th 2023.
+In total, we had eighteen attendees in person and eighteen attendees online, not including volunteers and hosts.
+This symposium aimed to showcase implementations of reproducibility and ethics for research, with a focus on Data Hazards.
+The symposium structure included a variety of speakers, an interactive workshop and networking opportunities.</p>
+<p>A central part of this symposium was the <a class="reference internal" href="../data-hazards.html#er-datahazards"><span class="std std-ref">Data Hazards</span></a> Workshop to provide a collaborative training opportunity for attendees.
+The workshop encourages attendees to explore, discuss and reflect on the ethical implications and wider societal impact of specific data-intensive projects.
+It was an opportunity for attendees to learn how to use the Data Hazards framework and see how it applies to different research projects.
+This allowed attendees to appreciate that ethics is complex, situational and important to discuss in our own contexts.</p>
+<p><code class="docutils literal notranslate"><span class="pre">{note}</span> <span class="pre">**This</span> <span class="pre">case</span> <span class="pre">study</span> <span class="pre">is</span> <span class="pre">an</span> <span class="pre">account</span> <span class="pre">of</span> <span class="pre">our</span> <span class="pre">first-hand</span> <span class="pre">experiences</span> <span class="pre">organising</span> <span class="pre">and</span> <span class="pre">hosting</span> <span class="pre">an</span> <span class="pre">event.</span> <span class="pre">It</span> <span class="pre">may</span> <span class="pre">be</span> <span class="pre">useful</span> <span class="pre">to</span> <span class="pre">you</span> <span class="pre">if</span> <span class="pre">you</span> <span class="pre">would</span> <span class="pre">like</span> <span class="pre">to</span> <span class="pre">host</span> <span class="pre">or</span> <span class="pre">organise</span> <span class="pre">your</span> <span class="pre">own</span> <span class="pre">accessible</span> <span class="pre">workshop</span> <span class="pre">in</span> <span class="pre">data</span> <span class="pre">ethics</span> <span class="pre">and</span> <span class="pre">reproducibility</span> <span class="pre">(whether</span> <span class="pre">a</span> <span class="pre">Data</span> <span class="pre">Hazards</span> <span class="pre">workshop</span> <span class="pre">or</span> <span class="pre">not).**</span></code></p>
+<p>For more detailed information and checklists, please see the Turing Way page for <a class="reference internal" href="../../collaboration/organising-conference.html#cl-organising-conferences"><span class="std std-ref">Organising a Conference</span></a>.</p>
+<section id="der-symposium-goals">
+<span id="er-datahazardscasestudy-goals"></span><h3>DER Symposium Goals<a class="headerlink" href="#der-symposium-goals" title="Permalink to this heading">#</a></h3>
+<p><strong>Primary Goal:</strong> to provide an open, inclusive and accessible space for attendees to learn from one another and discuss first-hand experiences applying ethics and reproducibility to their work.
+we hope to discuss the successes and challenges we might face, and importantly how to consider ethics as more than a tick-box exercise in a research project.</p>
+<p><strong>Goals for Event Organisers:</strong>
+To develop our skills in event management and organisation including:</p>
+<ul class="simple">
+<li><p>hosting event platforms for attendee registration.</p></li>
+<li><p>questionnaries and polls.</p></li>
+<li><p>learn about accessibility considerations and requirements.</p></li>
+<li><p>equality impact assessments.</p></li>
+</ul>
+<p>Importantly, we wanted to improve our collaborative, teamwork and networking skills with both volunteers and colleagues to provide a curated and thoughtful event.</p>
+<p><strong>Goals for Event Attendees:</strong></p>
+<ul class="simple">
+<li><p>Identify areas of research projects where wider ethical implications can be considered in different research contexts.</p></li>
+<li><p>Learn through a hands-on workshop how to embed ethics and reproducibility into current work or research.</p></li>
+<li><p>Discover what other attendees are working on in these areas.</p></li>
+</ul>
+</section>
+</section>
+<section id="organising-the-event">
+<span id="er-datahazardscasestudy-organising"></span><h2>Organising the Event<a class="headerlink" href="#organising-the-event" title="Permalink to this heading">#</a></h2>
+<p>Here we discuss the logistics for organising an event, from setting up and promoting the event on an external platform to collaborating with volunteers and speakers to help successfully run the event on the day.</p>
+<section id="creating-an-agenda">
+<span id="er-datahazardscasestudy-organising-agenda"></span><h3>Creating an Agenda:<a class="headerlink" href="#creating-an-agenda" title="Permalink to this heading">#</a></h3>
+<p>The first step was to put together some initial ideas for the agenda.
+We worked together using Google Docs.
+We used Google Docs because it allowed us to easily share the documents with other people, and it was easy to access.
+We made sure that no private or sensitive data was in any publicly shared Google Docs.
+Our finalised agenda is <a class="reference external" href="https://docs.google.com/document/d/13buQgzAbTTSWVtONXC3cnjegWapJ0CBkL7TBkqNNRqU/edit">here</a>.
+What did this process look like for us?</p>
+<ul class="simple">
+<li><p>brainstorming themed talks,</p></li>
+<li><p>deciding on keynote speakers,</p></li>
+<li><p>practicalities of running the <a class="reference external" href="https://datahazards.com/contents/materials/workshop.html">Data Hazards Workshop</a>,</p></li>
+<li><p>identifying the symposium’s target audience,</p></li>
+<li><p>planning the event start and end times, including rest breaks*,</p></li>
+<li><p>catering options,</p></li>
+<li><p>deciding whether to run a hybrid event (online and in-person). Guidelines for hybrid collaboration and events can be found <a class="reference external" href="https://book.the-turing-way.org/collaboration/hybrid-collab">here</a>.</p></li>
+</ul>
+<p>*To make the event more accessible, it was important for us to <strong>make sure there were enough ‘bio breaks’</strong> to allow people to stretch their bodies, use the toilet and take a breather.</p>
+<p><strong>Speakers</strong>
+A major part of putting together the agenda was all about picking our speakers.
+Speakers are what made our symposium come alive, so we were eager to connect with different people to make sure our event had a mix of perspectives.</p>
+<p>When looking for speakers we:</p>
+<ul class="simple">
+<li><p>reached out directly to keynote speakers whose research area or field considered data ethics and reproducibility.</p></li>
+<li><p>invited speakers from both inside and outside our organisation to include a variety of experiences.</p></li>
+<li><p>asked for abstracts and titles, providing potential speakers with an estimated length of talk (including time for questions) and session they would present in.</p></li>
+</ul>
+</section>
+<section id="advertising-the-event">
+<span id="er-datahazardscasestudy-organising-advertising"></span><h3>Advertising the Event<a class="headerlink" href="#advertising-the-event" title="Permalink to this heading">#</a></h3>
+<p><strong>Choosing a date and gauging interest:</strong>
+Before even asking for funding, we wanted to know if there was enough interest to organise a symposium.
+So we reached out to our community <em>before beginning to organise</em> the symposium to gauge interest and spread the word.
+This allowed us to know what other events were going on in The Alan Turing Institute and research field so that we could avoid clashes or busy times of the year.</p>
+<p><strong>Eventbrite:</strong>
+After finding an available date for our interested participants, we chose to advertise our event on Eventbrite.
+At the time of running our event, we could host it for free for 30 participants.
+However, as of now (November 2023), Eventbrite only allows you to host your event for free with up to 25 participants, then it charges you.
+Some alternatives you may use could be <a class="reference external" href="https://humanitix.com/us/pricing">Humanitix</a>, <a class="reference external" href="https://lu.ma/">Lu.ma</a> or <a class="reference external" href="https://www.cvent.com/uk">eventsforce</a>.
+Because we were running a hybrid event, we created two event pages (one <a class="reference external" href="https://www.eventbrite.co.uk/e/in-person-data-hazards-ethics-and-reproducibility-one-day-symposium-tickets-516803953537">in-person</a> and one <a class="reference external" href="https://www.eventbrite.co.uk/e/online-data-hazards-ethics-and-reproducibility-one-day-symposium-tickets-517490858087?keep_tld=1">online-only</a>).
+Eventbrite worked well for us because:</p>
+<ul class="simple">
+<li><p>it could be accessed by everyone, not just those in our organisation.</p></li>
+<li><p>we could use it to gather participant information (clearly explaining why we were asking for the sensitive information and how the data would be handled), including accessibility information participants wanted to declare and dietary requirements.</p></li>
+</ul>
+<p><strong>Communications</strong>
+To make sure we kept attendees engaged and up to date, we emailed them before the event to:</p>
+<ul class="simple">
+<li><p>encourage those who could no longer attend to cancel their reserved slot so that someone else could attend in their place.</p></li>
+<li><p>provide a small nudge and reminder that the event was happening.</p></li>
+<li><p>provide participants a code of conduct and agenda in advance.</p></li>
+<li><p>provide a Zoom link for online participants (one-week in advance) and directions to the location of the symposium for those attending in-person.</p></li>
+</ul>
+<p>This is what a template email could look like:</p>
+<blockquote>
+<div><p>Dear Participants,
+Thank you for registering for the <em>(In person) Data Hazards, Ethics and Reproducibility One-Day Symposium</em>, on the <em>10th March 2023</em>.
+We hope you are as excited as we are about this symposium!</p>
+<p><strong>Checking in: can you still make it?</strong>
+We ask you to please be considerate and kindly let us know in advance if you can no longer make it to the event.
+This will help us reduce waste when ordering catering as well as help with organizing room numbers.
+Due to the high demand of this event, we have people in a waiting list, so please do cancel your ticket in advance if you cannot make it any more, in order to allow someone else to join instead.
+Please cancel directly through Eventbrite or by emailing the organisers.</p>
+<p><strong>Agenda</strong>:
+Please find the tentative agenda here (add your own link here). It is mostly set up by now, please keep your eyes open for final details in the coming days. We are looking forward to showcasing these wonderful people and talks.</p>
+<p><strong>Code of Conduct</strong>:
+We ask all attendees to familiarize themselves with the code of conduct for the event (add your own link here). Please do have a read in your own time in order to allow for an open and welcoming environment among all participants.</p>
+<p><strong>How to reach the Alan Turing Institute, Enigma room</strong>:
+Once you arrive to the main Alan Turing Reception area, there will be someone there to greet you and guide you towards the Enigma room.
+Instructions on how to get to the Turing Institute can be found here (add your own link here).</p>
+</div></blockquote>
+</section>
+<section id="collaboration">
+<span id="er-datahazardscasestudy-organising-collaboration"></span><h3>Collaboration:<a class="headerlink" href="#collaboration" title="Permalink to this heading">#</a></h3>
+<p>The DER symposium had two primary organisers, however it would not have been possible without the help of different collaborators.
+Here we discuss the steps we took to reach out to volunteers, symposium collaborators and speakers to help the event run smoothly.</p>
+<p><strong>Internal Teams</strong>
+We had several collaborators from within our <a class="reference external" href="https://www.turing.ac.uk/">organisation</a> including:</p>
+<ul class="simple">
+<li><p>the <strong>Skills Team</strong> who assisted us with:</p>
+<ul>
+<li><p>completing equity, diversity and inclusion assessment and data protection forms.</p></li>
+<li><p>understanding the financial requirements of the event, from paying speaker travel expenses to setting up a purchase order for an event caterer.</p></li>
+<li><p>providing grassroots funding to cover event expenses.</p></li>
+</ul>
+</li>
+<li><p>the <strong>Facilities Team</strong> who assisted with:</p>
+<ul>
+<li><p>delivery of the catering on the day.</p></li>
+<li><p>room bookings to host the event.</p></li>
+<li><p>microphone and audio-visual set-up for the room to host the hybrid event.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Volunteers</strong>
+Volunteers were an essential part of the day, and our event would not have been successful without their help!
+For clear communication with volunteers, we:</p>
+<ul class="simple">
+<li><p><strong>provided an availability form</strong> for volunteers to fill in, indicating specific sessions or hours they could help, what they would like to do, and their own accessibility requirements.</p></li>
+<li><p><strong>hosted an on-boarding call</strong> to talk through the agenda and highlight the parts of the day where we would require help from volunteers.</p></li>
+<li><p><strong>created a dedicated volunteer’s Slack channel</strong>, so that volunteers could ask questions relating to the event, and we could easily deal with any troubleshooting during the event.</p></li>
+<li><p><a class="reference external" href="https://hackmd.io/c2AnZHeRRtWaA_QRwobjsQ"><strong>created a final volunteer’s task form</strong></a>, so that all volunteers had been assigned tasks before the event began</p></li>
+</ul>
+</section>
+<section id="catering">
+<span id="er-datahazardscasestudy-organising-catering"></span><h3>Catering<a class="headerlink" href="#catering" title="Permalink to this heading">#</a></h3>
+<p>For our event we choose a local, entirely vegan caterer, to align with the core values of the event.
+To ensure successful ordering and delivery of the catering on the day we:</p>
+<ul class="simple">
+<li><p>estimated the number of attendees to provide catering - including volunteers, speakers and organisers.</p></li>
+<li><p>received a quote from the caterers in advance and ensured we had the budget to cover the quote.</p></li>
+<li><p>collected dietary requirements to ensure that all attendees were catered for, and ensured the catering company received these requirements in advance.</p></li>
+<li><p>arranged a delivery time and location.</p></li>
+<li><p>ensured payment to catering company as per company and organisation policies.</p></li>
+</ul>
+<p>Tip: make sure terms and conditions are read and timing requirements from different parties involved are clear from the beginning.
+It might be that the caterer you are ordering from requires a purchase order to be completed at a certain time to complete the order action.</p>
+</section>
+</section>
+<section id="hosting-the-event">
+<span id="er-datahazardscasestudy-hosting"></span><h2>Hosting the Event<a class="headerlink" href="#hosting-the-event" title="Permalink to this heading">#</a></h2>
+<p>There is already a chapter on <a class="reference internal" href="../../collaboration/organising-conference.html#cl-organising-conferences"><span class="std std-ref">Organising a Conference</span></a> which includes an in-depth dive into requirements for accessibility.
+Likewise, there is also a section for <a class="reference internal" href="../../communication/comms-overview/comms-overview-accessibly.html#cm-comms-overview-accessibly"><span class="std std-ref">Communicating Accessibly</span></a>.
+As well as on <a class="reference internal" href="../../collaboration/hybrid-collab/hybrid-collab-guidelines.html#cl-hybrid-collab-guidelines"><span class="std std-ref">Guidelines for Hybrid Collaboration</span></a>.</p>
+<p>From our experience, here are some extra tips on the day of the event.</p>
+<section id="starting-the-event">
+<span id="er-datahazardscasestudy-hosting-startingevent"></span><h3>Starting the Event<a class="headerlink" href="#starting-the-event" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>As the hosts arrive in-person at least 1 hour prior to start time to ensure the Zoom link and audio-visual equipment (speakers, screens and microphones) are all working.</p></li>
+<li><p>Open the online call early to allow for:</p>
+<ul>
+<li><p>volunteers to settle in and open any breakout-rooms.</p></li>
+<li><p>participants to join in advance and set-up break out rooms for networking events and workshops later in the day.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="hybrid-event-tips">
+<span id="er-datahazardscasestudy-hosting-hybridevent"></span><h3>Hybrid Event Tips<a class="headerlink" href="#hybrid-event-tips" title="Permalink to this heading">#</a></h3>
+<p>We chose to host the symposium in a hybrid format as this would allow attendance for those interested in the topic, and speakers who would be unable to attend in-person.</p>
+<p>There are a lot of tasks involved in running a hybrid event.
+Thanks to good communication with volunteers and preparing the room before the event, our hybrid format ran successfully without hiccups.
+Here we share some tips that helped us!</p>
+<p>To ensure a smooth hybrid event, we:</p>
+<ul class="simple">
+<li><p>tested the physical room audio-visual the day before and the day of the event, to ensure there were multiple microphones and the capability for live Zoom recordings.</p></li>
+<li><p>had in-person session chairs to introduce speakers and make sure people (both online and in-person) kept to agenda timings.</p></li>
+<li><p>made sure session chairs were aware of the hybrid set-up, including microphones, speakers and Zoom settings,</p></li>
+<li><p>made sure that there was always at least one person in the room who was comfortable with the hosting technology.</p></li>
+<li><p>set a non-disruptive 1min warning, using a 1min sign to hold up in-person, or type into the chat online, to signal the end of the talk.</p></li>
+<li><p>kept questions to the end of the talks to avoid disruptions and talks becoming longer.</p></li>
+<li><p>kept in contact with online hosts throughout the day to ensure both the presentations and the audio were working.</p></li>
+<li><p>had our online volunteers keep track of break-out rooms, host discussions, and keep track of questions for Q&amp;A sessions.</p></li>
+</ul>
+</section>
+<section id="accessibility">
+<span id="er-datahazardscasestudy-hosting-accessibility"></span><h3>Accessibility<a class="headerlink" href="#accessibility" title="Permalink to this heading">#</a></h3>
+<p>Below we provide some insight into what was important for us to consider during the event.</p>
+<p><strong>Code of Conduct</strong>
+We put together a code of conduct for the event that reflected our values and the values of the community we aimed to create during the symposium.
+It also summarised the expectations of participants joining the symposium and laid out reporting guidelines and contact points for if the code of conduct was breached during the event.</p>
+<p>Please find our code of conduct <a class="reference external" href="https://hackmd.io/&#64;7D_si7-qQwKdepUrj7_AzA/DER_CoC">here</a>.</p>
+<p>Additionally, overall, below we highlight some points that we actioned to ensure that the hybrid format and the event were accessible:</p>
+<ul class="simple">
+<li><p>collected accessibility requirements at the time of advertising, to help with planning.</p></li>
+<li><p>used <a class="reference external" href="https://otter.ai/">Otter.ai</a>, a speech-to-text transcription application using artificial intelligence and machine learning.
+It shows captions for live speakers and generates written transcriptions.
+Note: <a class="reference external" href="http://Otter.ai">Otter.ai</a> is not always sufficient as it has been trained on English and American accents, so further editing of subtitles or transcripts might be needed.</p></li>
+<li><p>ensured all participants in person were using microphones when speaking.
+Microphones can be helpful for all hearing requirements, both online and in-person (don’t assume everyone can hear equally).</p></li>
+<li><p>provided regular accessibility breaks.</p></li>
+<li><p>reminded all participants which sections of the day would be recorded.</p></li>
+<li><p>provided a space for participants to include their names and pronouns using name labels for in-person and Zoom names online.</p></li>
+<li><p>provided a code of conduct, and contact points for if the code of conduct was breached.</p></li>
+<li><p>used the raised-hand function in Zoom for direct questions, but included a session chair to monitor for questions in the chat.</p></li>
+</ul>
+</section>
+</section>
+<section id="hosting-a-workshop-data-hazards">
+<span id="er-datahazardscasestudy-hosting-workshop"></span><h2>Hosting a Workshop: Data Hazards<a class="headerlink" href="#hosting-a-workshop-data-hazards" title="Permalink to this heading">#</a></h2>
+<p>The Data Hazards workshop was a key part of the symposium.
+Participants engaged with a real-life research case study, presented by the researchers themselves, to evaluate the Data Hazards labels and which ones may apply.
+The researcher gave a five-minute presentation on whole-cell models of <em>E. coli</em>.
+Participants could then ask the researcher only factual questions about the project, for example, ‘where did you collect your data from?’.
+There was collaboration between attendees, volunteers and the researcher to discuss the ethical context of the project.
+We split the attendees into smaller groups to facilitate discussion and provide a series of prompt questions.
+Each group then labelled the research project with the hazards they thought applied.
+These were then fed back to the researcher for broader group discussions.
+Details of the workshop run on the day are available in the <a class="reference internal" href="#er-datahazardscasestudy-postevent-githubrepo"><span class="std std-ref">GitHub Repository</span></a>.</p>
+</section>
+<section id="post-event">
+<span id="er-datahazardscasestudy-postevent"></span><h2>Post Event<a class="headerlink" href="#post-event" title="Permalink to this heading">#</a></h2>
+<p>Once the event had finished we collected feedback from participants.
+Below we provide information on how we did this.</p>
+<section id="feedback-forms">
+<span id="er-datahazardscasestudy-postevent-feedbackforms"></span><h3>Feedback Forms<a class="headerlink" href="#feedback-forms" title="Permalink to this heading">#</a></h3>
+<p>To cover all avenues for feedback after the event we:</p>
+<ul class="simple">
+<li><p>provided a QR code and link to the feedback form in the final session of the day and encouraged participants to complete this form.</p></li>
+<li><p>emailed participants after the event to thank them for their attendance and share the feedback form again.</p></li>
+<li><p>collected slides and recordings from speakers.</p></li>
+<li><p>created a public Git repository where all content is openly available for attendees and those interested in organising and hosting a similar event.</p></li>
+</ul>
+<p>Feedback is really invaluable to ensure that future organisers can learn from previous events.
+In our case, this was our first symposium, so feedback from participants was really important!
+Here we provide some feedback we were given after the event.</p>
+<p><strong>Positive Feedback:</strong></p>
+<ul class="simple">
+<li><p>Attendees who came to the symposium with no experience of the data hazards enjoyed the interactive nature of the workshop, saying that: <em>‘the structure of the course made it very easy to follow, and the case study element was very interactive with lots of opportunities to ask questions.’</em></p></li>
+<li><p>Attendees also enjoyed the wide applications of data ethics and reproducibility in the research space.</p></li>
+<li><p>Attendees enjoyed networking over lunch, and our <a class="reference external" href="http://yellowkitchen.co.uk/">vegan catering</a> got lots of compliments!</p></li>
+</ul>
+<p><strong>Constructive Feedback:</strong></p>
+<ul class="simple">
+<li><p>Some attendees struggled with people joining and leaving parts of the online event but recognised this was out of the organiser’s control.</p></li>
+<li><p>A consideration for future events would be to create initiatives to encourage people to stay online for the whole day.</p></li>
+<li><p>Attendees felt that an additional industry perspective would have been beneficial.</p></li>
+</ul>
+</section>
+<section id="github-repository">
+<span id="er-datahazardscasestudy-postevent-githubrepo"></span><h3>GitHub Repository<a class="headerlink" href="#github-repository" title="Permalink to this heading">#</a></h3>
+<p>To embody the topics of reproducibility and open science, we have shared symposium content on a public GitHub repository.
+The aim of this is to help anyone who wants to run a workshop or symposium in the future consider the different elements of event organisation and hosting.</p>
+<p>Find our full GitHub repository, including recordings of speakers, code of conduct, and forms <a class="reference external" href="https://github.com/Susana465/der_symposium_20230310">here</a>.</p>
+</section>
+</section>
+<section id="challenges">
+<span id="er-datahazardscasestudy-challenges"></span><h2>Challenges<a class="headerlink" href="#challenges" title="Permalink to this heading">#</a></h2>
+<p>As this was the first event (on this scale!) that we had organised, there were several challenges that popped up throughout the process.</p>
+<p>The primary challenge was understanding the number of hours required to organise an event.
+This event took over 50 hours of organisational time over a period of three months, from requesting funding, form writing, code of conduct, creating the event page, advertisement, organising catering and so on.
+If this is the first time you are organising an event, different tasks may take longer than expected to complete.
+We would recommend you establish a large organising committee of passionate people, to work together and split tasks efficiently.<br />
+It is also important to recognise the boundaries and constraints of how long you are willing to spend organising an event.
+Don’t let perfection be the enemy of good!
+This also taught us that organising an event will <strong>always</strong> take longer than you expect, so plan accordingly!</p>
+</section>
+<section id="reflections">
+<span id="er-datahazardscasestudy-reflections"></span><h2>Reflections<a class="headerlink" href="#reflections" title="Permalink to this heading">#</a></h2>
+<p>After the event, we realised that it is important to understand your organisation’s guidelines and frameworks for hosting events, what support they can offer you, and reach out to ask for help where you need it.</p>
+<p>In our experience organising and hosting an event was both stressful and fun!</p>
+<p>Hosting a hybrid event was challenging and required extra organisation and volunteers.
+But after all the effort we put into it, it ran smoothly and we were very proud to have both online and in-person attendance.</p>
+<p>We also recognise the importance of <a class="reference internal" href="../self-reflection.html#er-self-reflection"><span class="std std-ref">self reflection</span></a> throughout the process of organising an event, and how our lived experiences gave us a particular lens on how we view the world.
+So ensuring we collaborated with others, and took on different points of view ensured a responsible, inclusive, and fair event!</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ethical-research/data-hazards"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#der-symposium-goals">DER Symposium Goals</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organising-the-event">Organising the Event</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-an-agenda">Creating an Agenda:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advertising-the-event">Advertising the Event</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#collaboration">Collaboration:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#catering">Catering</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hosting-the-event">Hosting the Event</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#starting-the-event">Starting the Event</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hybrid-event-tips">Hybrid Event Tips</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accessibility">Accessibility</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hosting-a-workshop-data-hazards">Hosting a Workshop: Data Hazards</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-event">Post Event</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback-forms">Feedback Forms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-repository">GitHub Repository</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">Challenges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflections">Reflections</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dionysus
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  The Artist is the creator of beautiful things
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+# Each entry has the following schema:
+#
+# - title: mytitle   # Title of chapter or subchapter
+#   file: myfile  # filename relative to the  folder.
+#   sections:  # Contains a list of more entries that make up the chapter's subchapters
+#
+# Below are some special values that trigger specific behavior:
+# - header: My Header  # Will insert a header with no link in the sidebar
+
+# ===== Main Landing Page ========================================
+format: jb-book
+root: index
+chapters:
+  # ===== Foreword Section ========================================
+  - file: foreword/foreword
+    sections:
+      - title: Background
+        file: foreword/background
+      - title: Navigating the Handbook
+        file: foreword/navigate
+      - title: Emergence as The Turing Way Strategy
+        file: foreword/emergent-strategy
+      - title: Embracing the Principles of Digital Commons
+        file: foreword/embracing-digital-commons
+      - title: Community and Community Roles
+        file: foreword/community
+      - title: Governance
+        file: foreword/governance
+      - title: How to Cite
+        file: foreword/cite
+      - title: Frequently Asked Questions
+        file: foreword/faqs
+
+  # ===== Guide for Reproducible Research ========================================
+  - file: reproducible-research/reproducible-research
+    sections:
+      - title: Overview
+        file: reproducible-research/overview
+        sections:
+          - title: Definitions
+            file: reproducible-research/overview/overview-definitions
+          - title: Added Advantages
+            file: reproducible-research/overview/overview-benefit
+          - title: Barriers
+            file: reproducible-research/overview/overview-barriers
+          - title: Resources
+            file: reproducible-research/overview/overview-resources
+      - title: Open Research
+        file: reproducible-research/open
+        sections:
+          - title: Open Data
+            file: reproducible-research/open/open-data
+          - title: Open Source Software
+            file: reproducible-research/open/open-source
+          - title: Open Hardware
+            file: reproducible-research/open/open-hardware
+          - title: Open Access
+            file: reproducible-research/open/open-access
+          - title: Open Notebooks
+            file: reproducible-research/open/open-notebooks
+          - title: Open Scholarship
+            file: reproducible-research/open/open-scholarship
+          - title: Checklist
+            file: reproducible-research/open/open-checklist
+          - title: Resources
+            file: reproducible-research/open/open-resources
+      - title: Version Control
+        file: reproducible-research/vcs
+        sections:
+          - title: Version Control Workflow
+            file: reproducible-research/vcs/vcs-workflow
+          - title: Version Control and Branches
+            file: reproducible-research/vcs/vcs-workflow-branches
+          - title: The Git Version Control Software
+            file: reproducible-research/vcs/vcs-git-general
+          - title: Git for Research Projects
+            file: reproducible-research/vcs/vcs-git-in-research
+          - title: Git Using the Command Line
+            file: reproducible-research/vcs/vcs-git
+            sections:
+              - title: Git Commit Command
+                file: reproducible-research/vcs/vcs-git-commit
+              - title: Retrieving and Comparing Versions
+                file: reproducible-research/vcs/vcs-git-compare
+              - title: Git Branches
+                file: reproducible-research/vcs/vcs-git-branches
+              - title: Merging Branches in Git
+                file: reproducible-research/vcs/vcs-git-merge
+              - title: Interactive, Visual Git
+                file: reproducible-research/vcs/vcs-git-interactive
+              - title: Git Commands to Work on GitHub
+                file: reproducible-research/vcs/vcs-github
+              - title: Summary Table of Git Commands
+                file: reproducible-research/vcs/vcs-git-summary
+          - title: Version Control for Data
+            file: reproducible-research/vcs/vcs-data
+          - title: Personal Stories
+            file: reproducible-research/vcs/vcs-personal-stories
+          - title: Checklist
+            file: reproducible-research/vcs/vcs-checklist
+          - title: Resources
+            file: reproducible-research/vcs/vcs-resources
+      - title: Licensing
+        file: reproducible-research/licensing
+        sections:
+          - title: License Compatibililty
+            file: reproducible-research/licensing/licensing-compatibility
+          - title: Ethics-informed Licensing
+            file: reproducible-research/licensing/licensing-ethical-source
+          - title: Data Licenses
+            file: reproducible-research/licensing/licensing-data
+          - title: Hardware Licenses
+            file: reproducible-research/licensing/licensing-hardware
+          - title: Machine Learning Model Licenses
+            file: reproducible-research/licensing/licensing-ml
+            sections:
+              - title: "Case Studies: Choosing an ML License"
+                file: reproducible-research/licensing/licensing-ml-case-studies
+
+          - title: Checklist
+            file: reproducible-research/licensing/licensing-checklist
+      - title: Research Data Management
+        file: reproducible-research/rdm
+        sections:
+          - title: Research Data
+            file: reproducible-research/rdm/rdm-data
+          - title: Finding Data
+            file: reproducible-research/rdm/rdm-find
+          - title: Data Management Plan
+            file: reproducible-research/rdm/rdm-dmp
+          - title: The FAIR Principles and Practices
+            file: reproducible-research/rdm/rdm-fair
+          - title: Personal data management
+            file: reproducible-research/rdm/rdm-personal
+          - title: Data Storage and Organisation
+            file: reproducible-research/rdm/rdm-storage
+          - title: Data Organisation in Spreadsheets
+            file: reproducible-research/rdm/rdm-spreadsheets
+          - title: Documentation and Metadata
+            file: reproducible-research/rdm/rdm-metadata
+          - title: Methods and Protocols
+            file: reproducible-research/rdm/rdm-methods
+          - title: Electronic Lab Notebooks (ELNs)
+            file: reproducible-research/rdm/rdm-elns
+          - title: Data Curation
+            file: reproducible-research/rdm/rdm-data-curation
+          - title: Data Visualisation
+            file: reproducible-research/rdm/rdm-visualisation
+          - title: Data Repositories
+            file: reproducible-research/rdm/rdm-repository
+          - title: Sharing and Archiving Data
+            file: reproducible-research/rdm/rdm-sharing
+          - title: Data Article
+            file: reproducible-research/rdm/rdm-article
+          - title: Checklist
+            file: reproducible-research/rdm/rdm-checklist
+          - title: Personal Impact Stories
+            file: reproducible-research/rdm/rdm-stories
+          - title: Resources
+            file: reproducible-research/rdm/rdm-resources

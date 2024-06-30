@@ -1,0 +1,936 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Electronic Lab Notebooks &#8212; Music</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/book-stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-167881009-1"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-167881009-1');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reproducible-research/rdm/rdm-elns';</script>
+    <script src="../../_static/script.js"></script>
+    <link rel="canonical" href="https://book.the-turing-way.org/reproducible-research/rdm/rdm-elns.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Data Curation" href="rdm-data-curation.html" />
+    <link rel="prev" title="Methods and Protocols" href="rdm-methods.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content"><a href='https://www.gutenberg.org/files/174/174-h/174-h.htm'>Aesthetics vs. Morality</a></div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://static.dw.com/image/62054308_1004.webp" class="logo__image only-light" alt="Music - Home"/>
+    <script>document.write(`<img src="https://static.dw.com/image/62054308_1004.webp" class="logo__image only-dark" alt="Music - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Continuous 1, 2, 3
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../foreword/foreword.html">Foreword</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/navigate.html">Navigating the Handbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/emergent-strategy.html">Emergence as The Turing Way Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/embracing-digital-commons.html">Embracing the Principles of Digital Commons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/community.html">Community and Community Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/governance.html">Governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/cite.html">How to Cite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/faqs.html">Frequently Asked Questions</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../reproducible-research.html">Guide for Reproducible Research</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../overview.html">Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../overview/overview-definitions.html">Definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../overview/overview-benefit.html">Added Advantages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../overview/overview-barriers.html">Barriers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../overview/overview-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../open.html">Open Research</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../open/open-data.html">Open Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../open/open-source.html">Open Source Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../open/open-hardware.html">Open Source Hardware</a></li>
+
+
+
+
+<li class="toctree-l3"><a class="reference internal" href="../open/open-access.html">Open Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../open/open-notebooks.html">Open Notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../open/open-scholarship.html">Open Scholarship</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../open/open-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../open/open-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../vcs.html">Version Control</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../vcs/vcs-workflow.html">Version Control Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vcs/vcs-workflow-branches.html">Version Control and Branches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vcs/vcs-git-general.html">The Git Version Control Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vcs/vcs-git-in-research.html">Git for Research Projects</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../vcs/vcs-git.html">Git Using the Command Line</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../vcs/vcs-git-commit.html">Git Commit Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vcs/vcs-git-compare.html">Retrieving and Comparing Versions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vcs/vcs-git-branches.html">Git Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vcs/vcs-git-merge.html">Merging Branches in Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vcs/vcs-git-interactive.html">Interactive, Visual Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vcs/vcs-github.html">Git Commands to Work on GitHub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vcs/vcs-git-summary.html">Summary Table of Git Commands</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../vcs/vcs-data.html">Version Control for Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vcs/vcs-personal-stories.html">Personal Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vcs/vcs-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vcs/vcs-resources.html">Resources</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../licensing.html">Licensing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../licensing/licensing-compatibility.html">License Compatibililty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../licensing/licensing-ethical-source.html">Ethics-informed Licensing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../licensing/licensing-data.html">Data Licenses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../licensing/licensing-hardware.html">Hardware Licenses</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../licensing/licensing-ml.html">Machine Learning Model Licenses</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../licensing/licensing-ml-case-studies.html">Case Studies: Choosing an ML License</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../licensing/licensing-checklist.html">Checklist</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../rdm.html">Research Data Management</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="rdm-data.html">Research Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-find.html">Finding Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-dmp.html">Data Management Plan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-fair.html">The FAIR Principles and Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-personal.html">Personal data management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-storage.html">Data Storage and Organisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-spreadsheets.html">Data Organisation in Spreadsheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-metadata.html">Documentation and Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-methods.html">Methods and Protocols</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Electronic Lab Notebooks (ELNs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-data-curation.html">Data Curation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-visualisation.html">Data Visualisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-repository.html">Data Repositories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-sharing.html">Sharing and Archiving Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-article.html">Data Article</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-checklist.html">Checklist</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="rdm-stories.html">Personal Impact Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdm-resources.html">Resources</a></li>
+
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/edit/main/book/website/reproducible-research/rdm/rdm-elns.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/issues/new?title=Issue%20on%20page%20%2Freproducible-research/rdm/rdm-elns.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/reproducible-research/rdm/rdm-elns.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Electronic Lab Notebooks</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-pros-cons-of-elns">Quick Pros &amp; Cons of ELNs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-an-eln-solution">Choosing an ELN solution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importance-of-getting-it-right">Importance of getting it right</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#failure-modes-in-user-adoption-of-elns">Failure modes in user adoption of ELNs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#always-compare-to-paper-notebooks">Always compare to paper notebooks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#archival-function-of-notebooks">Archival function of notebooks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lock-in">Lock-in</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#automation-and-integration">Automation and integration</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eln-standards-and-project-governance">ELN standards and project governance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources-for-choosing-elns">Resources for choosing ELNs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-open-infrastructure-eln-options">Select Open Infrastructure ELN Options</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-non-elns-for-eln-things">Using non-ELNs for ELN things</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-eln-resources">Additional ELN resources</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="electronic-lab-notebooks">
+<span id="rr-rdm-elns"></span><h1>Electronic Lab Notebooks<a class="headerlink" href="#electronic-lab-notebooks" title="Permalink to this heading">#</a></h1>
+<p>An Electronic Laboratory Notebook (commonly known as an ELN or a digital lab notebook) is a software system designed to help you document and maintain reproducibility of your research and share information more easily.
+ELNs enable researchers to organize and store experimental procedures, protocols, plans, notes, data, and even unfiltered interpretations using their computer or mobile device.
+They can be a digital analogue to the paper notebook most researchers keep.
+ELNs can offer several advantages over the traditional paper notebook in documenting research during the active phase of a project, including; searchability within and across notebooks, secure storage with multiple redundancies, remote access to notebooks, and the ability to easily share notebooks among team members and collaborators.
+ELNs make the practice of <a class="reference internal" href="../open/open-notebooks.html#rr-open-notebooks"><span class="std std-ref">open notebooks</span></a> [<a class="reference internal" href="../../afterword/glossary.html#term-Open-Notebooks"><span class="xref std std-term">def</span></a>] practical in a way that it is not for paper lab books.
+However, it is important when choosing an ELN solution to avoid giving up the advantages offered by a paper lab notebook.</p>
+<section id="quick-pros-cons-of-elns">
+<span id="rr-rdm-elns-procon"></span><h2>Quick Pros &amp; Cons of ELNs<a class="headerlink" href="#quick-pros-cons-of-elns" title="Permalink to this heading">#</a></h2>
+<p>Electronic Lab Notebooks may provide, among other things, the following <strong>functionalities</strong>:</p>
+<ul class="simple">
+<li><p>A text editor with similar functions as a paper notebook</p></li>
+<li><p>A search function</p></li>
+<li><p>Secure storage and back up (with distinct failure modes from paper notebooks)</p></li>
+<li><p>Tools for working with tabular data (calculations and formatting of tables and graphs)</p></li>
+<li><p>Templates for documenting standard procedures</p></li>
+<li><p>Built-in Laboratory Inventory Management Systems (LIMS) functionality for managing and documenting samples, reagents, and apparatus, or integration with separate dedicated LIMS.</p></li>
+<li><p>Collaboration tools for sharing experimental information</p></li>
+<li><p>Some ELNs will allow you to comply with standards and regulations because of their certification processes</p></li>
+</ul>
+<p>ELNs also have their <strong>limitations</strong>:</p>
+<ul class="simple">
+<li><p><strong>Costs</strong>: Most ELN solutions can only be used through paid plans, or the free plans have reduced functionalities in the number of users, storage space or file sizes.
+Your lab may also not have access to tablets or pens that would make the use of ELNs easier.
+Check if your institution is offering a solution that you can use without additional costs.</p></li>
+<li><p><strong>File format</strong>: Always check if files can be exported in your preferred file formats to avoid format lock-in.
+Some ELNs also have API’s that allow integration with other software and workflows.</p></li>
+<li><p><strong><a class="reference internal" href="#rr-rdm-elns-choosing-lockin"><span class="std std-ref">Vendor-lock-in</span></a></strong>: Once you’re using a certain solution you may become dependent on it.
+Always have an exit strategy in case the solution is no longer offered or if you’re moving institutions and you no longer have access.</p></li>
+<li><p><strong>Sustainability</strong>: Choose a solution that has a larger chance of being around for a long time.</p></li>
+<li><p><strong>Drawing</strong>: Not all solutions have the tools or capabilities to include drawings or integration with drawing software.</p></li>
+<li><p><strong>Security</strong>: Before using an ELN solution you should check any backup plans and data security measures, especially if you’re working with sensitive data.</p></li>
+<li><p><strong>Laboratory situation</strong>: Your lab may not have an internet connection or electronic tools could affect samples, reagents or magnets in the lab.</p></li>
+<li><p><strong>Learning curve</strong>: ELNs have a longer learning curve than paper notebooks and it takes time to learn how to use them.
+User-friendliness and flexibility are important to accommodate the widely varying workflows of each lab member.</p></li>
+</ul>
+</section>
+<section id="choosing-an-eln-solution">
+<span id="rr-rdm-elns-choosing"></span><h2>Choosing an ELN solution<a class="headerlink" href="#choosing-an-eln-solution" title="Permalink to this heading">#</a></h2>
+<p>If you are in a position to choose an ELN to use, or are making a choice on behalf of an organisation there are some factors to consider:</p>
+<section id="importance-of-getting-it-right">
+<span id="rr-rdm-elns-choosing-importance"></span><h3>Importance of getting it right<a class="headerlink" href="#importance-of-getting-it-right" title="Permalink to this heading">#</a></h3>
+<p>Many organisations offer software that purports to solve the problem of ELNs.
+So choosing a suitable solution can be a major headache and responsibility.
+The choice of ELN is an incredibly important decision, and one that your organisation will likely have to live with for years, or even decades.
+You are putting the record of your research into the hands of the tool that you choose, and entering into a long-term relationship with the provider of your ELN solution.
+You are also making a choice about a tool that many of the people in your organisation will interface with closely every day.
+Having to use a tool that is not well fit to its function on a daily basis can be a major problem for productivity and morale.
+Conversely, a tool that is a good fit gets out of people’s way and makes their jobs easier can be a major boost to productivity and morale.</p>
+</section>
+<section id="failure-modes-in-user-adoption-of-elns">
+<span id="rr-rdm-elns-choosing-failure-modes"></span><h3>Failure modes in user adoption of ELNs<a class="headerlink" href="#failure-modes-in-user-adoption-of-elns" title="Permalink to this heading">#</a></h3>
+<p>Incomplete or inflexible ELN solutions which increase friction in workflows can cause issues.
+People will avoid using ill-fitting tools that they perceive to be getting in their way, especially scientists.
+They are creative, stubborn, resourceful, and impatiently focused on answering their research questions with whatever tools are available to them.
+Finding software with the flexibility, capability, and scope to keep up is not easy and if it doesn’t researchers won’t use it - at least not as you intended.</p>
+<ul class="simple">
+<li><p>Shadow IT/notebooks</p>
+<ul>
+<li><p>People using their own unsanctioned solutions which may be a compliance issue and introduce risks that you have not accounted for</p></li>
+</ul>
+</li>
+<li><p>Infrequent updates</p>
+<ul>
+<li><p>People dump a copy of their work into the ELN only as often as necessary for compliance</p></li>
+</ul>
+</li>
+<li><p>Consistency issues</p>
+<ul>
+<li><p>If there are paper and potentially multiple electronic copies of some information - what happens when it does not agree? What is the source of truth?</p></li>
+</ul>
+</li>
+<li><p>Sprawl</p>
+<ul>
+<li><p>Partial adoptions can lead to different pieces of information being stored in different systems which might not be connected making it harder to record and find information which was previously in one place.
+This can make information recording and retrieval processes more complex, expensive and brittle</p></li>
+</ul>
+</li>
+<li><p>Practical use and interface issues</p>
+<ul>
+<li><p>Laptops or tablets can introduce interface barriers</p>
+<ul>
+<li><p>Lab gloves may hamper the use of touchscreens and track pads</p></li>
+<li><p>Free-hand drawing is not always well supported which can be necessary when using notation that is not easily represented in simple text such as mathematical and chemical notation</p></li>
+<li><p>Client issues, such as native mobile applications with incomplete featuresets, slow web-apps that may require an always-on connection and not be able to cache local changes</p></li>
+<li><p>No spatial memory, whereas in a physical book people may remember where they wrote things and can open it roughly on the right page</p></li>
+<li><p>Extra expense, maintenance and procurement issues with hardware suitable for use in your research environment</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Lack of sufficiently available training on more complex aspects of the ELN solution leading to poor, mis-use, or under-use of ELN features</p></li>
+</ul>
+</section>
+<section id="always-compare-to-paper-notebooks">
+<span id="rr-rdm-elns-choosing-compare-to-paper"></span><h3>Always compare to paper notebooks<a class="headerlink" href="#always-compare-to-paper-notebooks" title="Permalink to this heading">#</a></h3>
+<p>When picking an ELN remember to always compare the ELN to a paper notebook and not just to other ELNs.
+It is likely paper that you are replacing so this is the benchmark against which to compare.
+Consider the differences between a paper copy of a lab notebook and an electronic copy.
+Consider also which properties of a paper copy is it important to you that you are able to retain when adopting an electronic alternative.</p>
+<ul class="simple">
+<li><p>A paper lab notebook is physically under your control.</p></li>
+<li><p>You (or more likely your organisation) own it.</p></li>
+<li><p>You can control access to it physically.</p></li>
+<li><p>Your physical possession of this resource means that it would be difficult for anyone to prevent you from accessing it.</p></li>
+<li><p>Conversely it must be physically stolen to be accessed by a malicious third party.</p></li>
+<li><p>On the other hand, ELNs - like all software - have security vulnerabilities.</p></li>
+<li><p>You are not dependent on the functioning of any complex systems like computer networks in order to be able to use your paper lab notebook.</p></li>
+<li><p>You do not need any specialist tools in order to access its contents.</p></li>
+<li><p>There is no reason why you might have to pay a third party a fee in order to continue using it.</p></li>
+<li><p>You do not have to agree to a ‘terms of service’ or ‘end-user license agreement’ with a third party to use and retain access to your lab book. These terms may be subject to unilateral alteration by that third party.</p></li>
+</ul>
+<p>If your provider of paper lab books goes out of business it has almost no bearing on your ability to continue doing your work.
+One paper notebook is much like another, finding a new provider is pretty easy.
+Changing providers does not impact on your ability to access your past notebooks or to continue operating with the same workflow in future ones.
+This is not necessarily true of ELNs.</p>
+</section>
+<section id="archival-function-of-notebooks">
+<span id="rr-rdm-elns-choosing-archival"></span><h3>Archival function of notebooks<a class="headerlink" href="#archival-function-of-notebooks" title="Permalink to this heading">#</a></h3>
+<p>Lab notebooks perform an archival function.
+Few active measures are needed to maintain the data in your paper notebooks.
+The primary vulnerability of paper lab books is that there is only one copy.
+Nevertheless, as long as they are kept in a cool, dry and dark spot (for example a fireproof safe) they will likely last decades.</p>
+<p>Electronic data requires much more active upkeep.
+Electronic data can, <em>if managed properly</em>, be more resilient to physical threats such as fire and flooding as it can frequently be backed up in multiple locations.
+A hard drive, or even a solid state drive, however, cannot be left in a draw for a decade or more and have a high likelihood of working without some amount of bit-rot or compatibility issues when plugged back in.</p>
+<p>For digital data it is important for archiving and maintaining the data to use formats that maximize the likelihood of recovering relevant information.
+Proprietary formats are antithetical to this.
+Proprietary solutions generally obfuscate the format, even if just through absense of generally available specifications and documentation.
+Proprietary formats generally have a single implementation from their creator, this creates a single point of failure.
+Open formats can have multiple different implementations of tools which read them.
+If there is a good enough specification then new tools can even be written for the format if none of the originals are available anymore.
+Proprietary tools may require some kind of license activation process to use this may not be possible if their vendor no longer exists.
+Using a proprietary solution for archival purposes is therefore taking a needless risk with the future of your data.
+Your data’s fate is tied to the format in which it is stored so choose it wisely.</p>
+</section>
+<section id="lock-in">
+<span id="rr-rdm-elns-choosing-lockin"></span><h3>Lock-in<a class="headerlink" href="#lock-in" title="Permalink to this heading">#</a></h3>
+<p>Most proprietary or open tools will permit you to export your data in one format or another.
+The quality of this export is critical to scrutinise.
+The ability to save all your lab books as PDFs is fine but if it is the only option you may lose a lot of metadata, and the ability to import your data into a new solution.
+The ability to export your data and retain the original structure is very important to evaluate.</p>
+<p>Proprietary solutions are incentivised to attempt to lock-in their customers so that the cost of switching to a competitor is high - so be especially wary of poor export options.
+Note that this tends to change over time.
+New providers are focused on user acquisition so data portability is often good at first but tends to decline after a certain point in time.
+Firms tends to follow a pattern of shifting from a user acquisition phase with favourable terms, to a user retention phase with less favourable ones.
+Mendeley for example began <a class="reference external" href="https://www.zotero.org/support/kb/mendeley_import#mendeley_database_encryption">encrypting their local database</a>.
+This made it impossible to migrate your local library to different reference managers without going through the Mendeley online library feature.
+This occurred after they had reached a high degree of market penetration and had been acquired by Elsevier.</p>
+<p>When looking for any critical piece of software for long term use the first questions to ask are:</p>
+<ul class="simple">
+<li><p>Is there an Libre / open-source solution to this problem?</p></li>
+<li><p>If it is a web app and/or has a server: Could I host my own fully featured instance, should I need to?</p></li>
+<li><p>Is there a large/active community using the project, does it have institutional backing of some kind?
+This might take the form of a company which sells service contracts, or offers paid hosting ideally with feature parity with a self-hosted option.
+Or perhaps a foundation or other non-profit/academic organisation with robust funding.</p></li>
+<li><p>What are the data export options and formats?</p></li>
+</ul>
+<p>Open solutions provide you with the assurance that if you do the appropriate preparatory work you should be able to access all of your data in its native form.
+For example keeping copies of the ELN software that can be run offline in a virtual machine (VM) or similar computational environment in the future.
+This is typically much easier for open applications and can be impossible for proprietary ones.
+Even if the tools are no longer maintained they can still be used to read the data and interact with it in (mostly) the same way.
+The data will also likely be stored in an open format from which it can relatively easily be extracted and ported to a new format.
+This may still be a lot of work but it is much more attainable than reverse engineering a proprietary format for which there is no documentation, or worse - dealing with encrypted files.</p>
+<p>You can pay for third party hosting and administration of open source applications.
+This is a solution when you don’t have the expertise or internal resources to administer a self-hosted instance of an open-source ELN solution.
+In this case you get the best of both worlds: the benefits of professional support and the reassurance of an open solution.
+You should still take regular local backups of exports from your hosting provider from which you could restore your ELN system with different hosting.
+This means that you retain the option to change providers.
+Conventional Software as a Service (SaaS) platforms are highly vertically integrated: the software development, hosting, administration, and support are package deal that you must take or leave as is.
+When using open tools each of these layers can separated, though they do not need to be.
+This gives you the flexibility to change your provider of any of them independently.
+This improves your bargaining position, but may increase procurement complexity.</p>
+</section>
+<section id="automation-and-integration">
+<span id="rr-rdm-elns-choosing-automation"></span><h3>Automation and integration<a class="headerlink" href="#automation-and-integration" title="Permalink to this heading">#</a></h3>
+<p>ELNs with APIs have the potential for integration with instruments that would permit direct deposition of data from connected instruments into ELNs or other connected research data management infrastructure.
+These sorts of integrations are especially useful in workflows at core facilities.
+For example, bioimaging facilities can automate a substantial part of the image metadata deposition into image data management tools such as <a class="reference external" href="https://www.openmicroscopy.org/omero/">OMERO</a>.</p>
+</section>
+</section>
+<section id="eln-standards-and-project-governance">
+<span id="rr-rdm-elns-standards"></span><h2>ELN standards and project governance<a class="headerlink" href="#eln-standards-and-project-governance" title="Permalink to this heading">#</a></h2>
+<p>ELNs offer many advantages over paper notebooks.
+Nevertheless, ELNs come with a considerable amount of additional complexity and additional risks - so it is important to have a mitigation plan.
+The ELN space is still quite young and rapidly changing.
+As such it is important to think about how the academic community wants the ELN infrastructure to be owned and governed in the long run.
+An interesting model to consider emulating here is <a class="reference external" href="https://moodle.com/">moodle</a>, an open source electronic learning environment popular with universities.
+It offers commercial support and hosting and has a network of developers across the education sector who contribute to the core project, as well as creating custom integrations and extensions to meet their particular needs.
+This structure allows institutions to pool resources to fund the development of features that they all need and keeps this infrastructural code in common ownership, avoiding the worst lock-in issues arising from the use of proprietary solutions.
+This more open distributed model also allows individuals to work on their own custom extensions and integrations instead of being reliant on the ability and willingness of a company to implement a feature that you need.</p>
+<p>Without an open standard even if you are using an open source ELN and/or open file format this does not mean that you will necessarily be able to easily use your data with other ELN tools.
+Such a standard would, if properly adhered too, reduce the lock-in risk associated with using both open and proprietary tools.
+An initiative to devise ELN format standards would be most welcome.</p>
+</section>
+<section id="resources-for-choosing-elns">
+<span id="rr-rdm-choosing-elns"></span><h2>Resources for choosing ELNs<a class="headerlink" href="#resources-for-choosing-elns" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://doi.org/10.1038/d41586-018-05895-3">How to pick an electronic laboratory notebook</a> by <span id="id1">[<a class="reference internal" href="../../afterword/bibliography.html#id211" title="Roberta Kwok. How to pick an electronic laboratory notebook. Nature, 2018. URL: https://doi.org/10.1038/d41586-018-05895-3, doi:10.1038/d41586-018-05895-3.">Kwo18</a>]</span></p></li>
+<li><p><a class="reference external" href="https://app.scientist.com/blog/2019/04/05/2019-review-of-the-best-electronic-laboratory-notebooks">2019 Review of the Best Electronic Laboratory Notebooks</a>.</p></li>
+<li><p><a class="reference external" href="https://labfolder.com/electronic-lab-notebook-eln-research-guide/">Guide on choosing an ELN from Simon Bungers of Labfolder</a>.</p></li>
+<li><p>The Harvard Longwood Medical Area Research Data Management Working Group Constructed an <a class="reference external" href="https://doi.org/10.5281/zenodo.4723753">Electronic Lab Notebook Comparison Matrix</a> in 2021, for convenience <a class="reference external" href="https://docs.google.com/spreadsheets/d/1ar8fgwagOh30E31EAPL-Gorwn_g6XNf81g3VDQnQ_I8/edit#gid=0">a nicely formatted google sheet version</a>, is also available.</p></li>
+<li><p>This recent review <span id="id2">[<a class="reference internal" href="../../afterword/bibliography.html#id217" title="Stuart G. Higgins, Akemi A. Nogiwa-Valdez, and Molly M. Stevens. Considerations for implementing electronic laboratory notebooks in an academic research environment. Nature Protocols, 17(2):179–189, 01 2022. URL: http://dx.doi.org/10.1038/s41596-021-00645-8, doi:10.1038/s41596-021-00645-8.">HNVS22</a>]</span> provides a good overview of considerations when adopting an ELN solution.
+It covers such things a regulatory compliance that is not yet touched on here.
+It does occasionally appear to conflate open-source solutions with self-hosted ones which need not necessarily be the case.
+Some companies will let you host proprietary apps on premises.
+It is also possible to pay for third party hosting and administration of open source applications.</p></li>
+</ul>
+<ul class="simple">
+<li><p><a class="reference external" href="https://eln-finder.ulb.tu-darmstadt.de/home">ELN finder</a> a tool to select an ELN suitable for your purposes</p></li>
+</ul>
+</section>
+<section id="select-open-infrastructure-eln-options">
+<span id="rr-rdm-eln-open-elns"></span><h2>Select Open Infrastructure ELN Options<a class="headerlink" href="#select-open-infrastructure-eln-options" title="Permalink to this heading">#</a></h2>
+<p>The following ELN options are each quite different but have many of the same core features.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.elabftw.net/">eLabFTW</a></p>
+<ul>
+<li><p>Has features such as: Laboratory resource scheduling feature for booking things like hoods and microscopes, automatic mol file previews for molecules and proteins, and support for free-hand drawing.</p></li>
+<li><p>eLabFTW has a <a class="reference external" href="https://www.elabftw.net/">website</a>, <a class="reference external" href="https://doc.elabftw.net/">documentation</a> and there is a <a class="reference external" href="https://demo.elabftw.net/login.php">demo</a> deployment that you can try out.</p></li>
+<li><p>Self-hosting is <em>relatively</em> simple <a class="reference external" href="https://doc.elabftw.net/install.html">according to the documentation</a>.
+There is also a <a class="reference external" href="https://www.deltablot.com/elabftw/">paid support tier</a> which would be recommend for any larger deployment to support the ongoing development of the project.</p></li>
+<li><p><a class="reference external" href="https://www.deltablot.com/elabftw/">Paid cloud hosting</a> is available from the developer in a geographical region suited to your needs.
+A more expensive tier with hosting in France compliant with additional security and privacy certifications is available.</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://openbis.ch/">openBIS</a></p>
+<ul>
+<li><p>Robust features for integrated metadata management, for example, linking to ontologies / controlled vocabularies.</p></li>
+<li><p>openBIS has an API and can integrate with Jupyterhub for Electronic Lab Notebooks.</p></li>
+<li><p>Complete LIMS where storage is integrated with protocols and experiment records, including keeping track of bar-coded stocks.</p></li>
+<li><p>You can get a feel for it in the <a class="reference external" href="https://openbis-eln-lims.ethz.ch/openbis/webapp/eln-lims/">demo</a> deployment.</p></li>
+<li><p>openBIS is a bit more complex to administer <a class="reference external" href="https://openbis.ch/index.php/docs/admin-documentation/">based on its documentation</a>.</p></li>
+<li><p>As openBIS is developed at ETH Zurich it can be hosted for you under the openRDM service operated by ETH Zurich scientific IT services.
+No fixed pricing is available - cost would be dependent on your specific needs.</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://osf.io/">OSF</a></p>
+<ul>
+<li><p>OSF is oriented towards sharing and collaborating on your work, including the ability to generate DOIs and host pre-prints directly on the main instance.
+See <a class="reference internal" href="rdm-repository.html#rr-rdm-repository-osf"><span class="std std-ref">OSF</span></a> for more information.</p></li>
+<li><p>It is free to use OSF at the main instance at <a class="reference external" href="https://osf.io/">osf.io</a>.
+For larger data you must provide your own additional <a class="reference external" href="https://help.osf.io/article/395-storage-add-ons">storage add-ons, available from a number of cloud storage providers</a>.</p></li>
+<li><p>Whilst you could deploy your own self-hosted OSF this is not how it is intended to be used (except for development).</p></li>
+<li><p>The OSF has strong sharing features, making it easy to share parts of your ELN publicly.</p></li>
+</ul>
+</li>
+</ul>
+<p>When using an open solution it is always important to consider how you can contribute to its ongoing development and maintenance, for example by donating to the project.
+If it makes sense given the makeup of your organisation and that of the project you may also be able to contribute developer time to the project.</p>
+</section>
+<section id="using-non-elns-for-eln-things">
+<span id="rr-rdm-using-non-elns-for-eln-things"></span><h2>Using non-ELNs for ELN things<a class="headerlink" href="#using-non-elns-for-eln-things" title="Permalink to this heading">#</a></h2>
+<p>Note taking and personal knowledge management (PKM) applications of various kinds have been pushed into service as ELNs by many individuals and institutions, despite not being designed specifically for this task.
+Some tools are better suited to be used ‘off-label’ as ELNs than others.
+Some may have significant drawbacks compared to purpose built solutions, despite being better at some things than currently available dedicated ELN options.</p>
+<p>Microsoft OneNote is quite popular as an ELN despite a proprietary notebook format with limited export options and that <a class="reference external" href="https://www.youtube.com/watch?v=4IkUfh05TGE">Microsoft has entertained getting rid of the good (desktop) version this of application in favour of its much less featureful ‘web’ version in the past. Though they have apparently relented, for now</a>.
+OneNote is a good experience as a free-form note taking tool especially for hand-written or drawn notes and automatic linking of annotations to audio timestamps.
+The lack of a good version history is a distinct downside.
+Its popularity likely stems, in part, from its availability in the Microsoft Office suite (software already provided by institutions which do not incur additional costs).</p>
+<p>Other generic note taking applications have featuresets which are not dissimilar to ELN solutions.
+For example, open source applications like <a class="reference external" href="https://logseq.com/">logseq</a> or <a class="reference external" href="https://www.zettlr.com/">zettlr</a>, and proprietary ones like: <a class="reference external" href="https://obsidian.md/">obsidian</a> or <a class="reference external" href="https://www.notion.so/">notion</a>.</p>
+</section>
+<section id="additional-eln-resources">
+<span id="rr-rdm-additional-eln-resources"></span><h2>Additional ELN resources<a class="headerlink" href="#additional-eln-resources" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://doi.org/10.1186/s13321-017-0221-3">Electronic Lab Notebooks: can they replace paper?</a> by <span id="id3">[<a class="reference internal" href="../../afterword/bibliography.html#id210" title="Samantha Kanza, Cerys Willoughby, Nicholas Gibbins, Richard Whitby, Jeremy Graham Frey, Jana Erjavec, Klemen Zupancic, Matjaz Hren, and Katarina Kovac. Electronic lab notebooks: can they replace paper? Journal of Cheminformatics, 2017. URL: https://doi.org/10.1186/s13321-017-0221-3, doi:10.1186/s13321-017-0221-3.">KWG+17</a>]</span></p></li>
+<li><p><a class="reference external" href="https://datamanagement.hms.harvard.edu/collect-analyze/electronic-lab-notebooks">Electronic Lab Notebooks</a> by Harvard Medical School</p></li>
+<li><p><a class="reference external" href="https://www.researchspace.com/">RSpace</a></p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./reproducible-research/rdm"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="rdm-methods.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Methods and Protocols</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rdm-data-curation.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Data Curation</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-pros-cons-of-elns">Quick Pros &amp; Cons of ELNs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-an-eln-solution">Choosing an ELN solution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importance-of-getting-it-right">Importance of getting it right</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#failure-modes-in-user-adoption-of-elns">Failure modes in user adoption of ELNs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#always-compare-to-paper-notebooks">Always compare to paper notebooks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#archival-function-of-notebooks">Archival function of notebooks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lock-in">Lock-in</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#automation-and-integration">Automation and integration</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eln-standards-and-project-governance">ELN standards and project governance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources-for-choosing-elns">Resources for choosing ELNs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-open-infrastructure-eln-options">Select Open Infrastructure ELN Options</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-non-elns-for-eln-things">Using non-ELNs for ELN things</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-eln-resources">Additional ELN resources</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dionysus
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  The Artist is the creator of beautiful things
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

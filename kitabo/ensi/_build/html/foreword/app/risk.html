@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortality Risk Calculator</title>
+</head>
+<body>
+    <div>
+        <label for="scenario-dropdown">Select Scenario:</label>
+        <select id="scenario-dropdown">
+            <option value="donor">Donor</option>
+            <option value="nondonor">Nondonor</option>
+            <option value="genpop">Genpop</option>
+            <option value="fair">Fair</option>
+            <option value="poor">Poor</option>
+        </select>
+        <button id="calculate-risk-button" disabled>Calculate Mortality Risk</button>
+    </div>
+    <div style="width: 80vw; margin: 0 auto;">
+        <canvas id="mortality-risk-graph" width="400" height="400"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
