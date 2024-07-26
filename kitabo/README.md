@@ -1,10 +1,10 @@
 ## Claude 3.5 Sonnet
 
 ```sh
-cd ~/documents/memos/jam/kitabo/ensi
+cd ~/documents/rhythm/jam/kitabo/ensi
 pip install -r requirements.txt && jupyter-book build .
-cp -r foreword/app/* _build/html/foreword/app
-cd ~/documents/chords/
+cp -r part1/app/* _build/html/part1/app
+cd ~/documents/rhythm/
 new/jbb_https.sh
 ```
 
