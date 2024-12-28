@@ -7,7 +7,7 @@
 title                       : Will # The title of the book. Will be placed in the left navbar.
 author                      :  # The author of the book
 copyright                   : "2025"  # Copyright year to be placed in the footer
-logo                        :  https://books.google.com/books/publisher/content?id=ofaZEAAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2UT0z9eaIx3_3-Ll22M4npZhXkAQ&w=1280 # A path to the book logo
+logo                        :  https://m.media-amazon.com/images/I/91sxjxkws2L._SL1500_.jpg # A path to the book logo
 email                       : "abikesa.sh@gmail.com"
 exclude_patterns            : ["LICENSE.md"]  # Patterns to skip when building the book. Can be glob-style (for example "*skip.ipynb")
 
