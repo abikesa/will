@@ -5,50 +5,52 @@ chapters:
   # Sing O Muse!
   - file: act1/part1
     sections:
-      - title: Mortality
+      - title: Peccata Mundi
         file: act1/chapter1
-      - title: ESRD
+      - title: Behold the Lamb of God
         file: act1/chapter2
-      - title: Frailty
+      - title: Dona Nobis Pacem
         file: act1/chapter3
         
   # Sing O Muse!
   - file: act2/part2
     sections:
-      - title: Hospitalization
+      - title: Anarchy, Determinism, Biology
         file: act2/chapter1
-      - title: Length of Stay
+      - title: Oligarchy, Cartels, Sociology
         file: act2/chapter2
-      - title: Outcomes
+      - title: Monarchy, Fantasies, Psychology
         file: act2/chapter3
 
   # Apollo
   - file: act3/part3
     sections:
-      - title: WebApp
+      - title: Apres Moi, La Déluge!
         file: act3/act1
         sections:
-          - title: Browser
+          - title: Henry Flynn on Rodri's Absence
             file: act3/part1/part1_1
-          - title: User
+          - title: Guardiola on Chicago Bulls Sans Jordan
             file: act3/part1/part1_2
-          - title: Annotation
+          - title: Nodes, Edges, Weights, Meaning
             file: act3/part1/part1_3
-      - title: Deployment
+      - title: Heaven's Gates & Fortresses
         file: act3/act2
         sections:
-          - title: GitHub
+          - title: Animal Insticts & The Gambler
             file: act3/part2/part2_1
-          - title: Collaborative
+          - title: 'What is Great in Man: Transformational Ventures'
             file: act3/part2/part2_2
-          - title: Open-Source
+          - title: 'Übermensch, Maternal, Umbrella ☔️'
             file: act3/part2/part2_3
-      - title: Iteration
+      - title: Iterative Refinement of Mankind?
         file: act3/act3
         sections:
-          - title: Latest Research
+          - title: Optimism and the Very Linear Narrative
             file: act3/part3/part3_1
-          - title: Bayesian Updates
+          - title: The Cheerful, Absurdist Pessimist
             file: act3/part3/part3_2
-          - title: Missingness and A Priori
+          - title: Conclusion, Epilogue, Notes
             file: act3/part3/part3_3
+
+  - file: bibliography

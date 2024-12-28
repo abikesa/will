@@ -4,10 +4,10 @@
 
 #######################################################################################
 # Book settings
-title                       : Template  # The title of the book. Will be placed in the left navbar.
-author                      : ADM  # The author of the book
+title                       : Nineth # The title of the book. Will be placed in the left navbar.
+author                      :  # The author of the book
 copyright                   : "2025"  # Copyright year to be placed in the footer
-logo                        : "https://github.com/jhufena/jhufena.github.io/blob/main/png/hub_and_spoke.jpg?raw=true"  # A path to the book logo
+logo                        :  https://upload.wikimedia.org/wikipedia/commons/2/25/Howard_Stern.jpg # A path to the book logo
 email                       : "abikesa.sh@gmail.com"
 exclude_patterns            : ["LICENSE.md"]  # Patterns to skip when building the book. Can be glob-style (for example "*skip.ipynb")
 
@@ -22,12 +22,12 @@ execute:
 # HTML-specific settings
 html:
   navbar_number_sections    : False  # Add a number to each section in your left navbar
-  home_page_in_navbar       : False  # Whether to include your home page in the left Navigation Bar; I like this!!!!!!!
+  home_page_in_navbar       : True  # Whether to include your home page in the left Navigation Bar; I like this!!!!!!!
   use_repository_button     : False  # Whether to add an "Repository" button to pages. If `true`, repository information in repository: must be filled in
   use_issues_button         : False  # Whether to add an "Open issue" button to pages. If `true`, repository information in repository: must be filled in
   use_edit_page_button      : False  # Whether to add an "Suggest edit" button to pages. If `true`, repository information in repository: must be filled in
   extra_footer              : |
-    The Artist is the creator of beautiful things
+   Copyright © 2025 Zeus
   comments:
     hypothesis              : False # For data collection in top right corner
   extra_css:
@@ -64,6 +64,6 @@ sphinx:
       - _bibliography/references.bib
     bibtex_reference_order: 'citation' 
     bibtex_default_style: 'unsrt' # 'plain' 
-    bibtex_reference_style: 'label' # 'author_year'  
-    bibtex_cite_style: 'numeric'
+    bibtex_reference_style: 'super' # 'label' # 'author_year' (this worked)
+    bibtex_cite_style: 'super' #'numeric' (for diff. jb version)
     bibtex_footbibliography_header: ''
